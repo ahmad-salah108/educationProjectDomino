@@ -21,6 +21,17 @@ import VideoLessonsCategory from './pages/user/videoLessons/VideoLessonsCategory
 import ViewVideoLessonSingle from './pages/user/videoLessons/ViewSingleLesson';
 import PlayerLessonPage from './pages/user/videoLessons/PlayerLessonPage';
 import LessonUrlPage from './pages/user/videoLessons/LessonUrlPage';
+import ShowSubjectsExam from './pages/user/exams/ShowSubjectsExam';
+import ShowCategorySubjectsExam from './pages/user/exams/ShowCategorySubjectsExam';
+import MultiQuestionsInPage from './pages/user/exams/MultiQuestionsInPage';
+import SingleQuestionTrueOrrFalse from './pages/user/exams/SingleQuestionTrueOrFalse';
+import SingleQuestionChoices from './pages/user/exams/SingleQuestionChoices';
+import TeacherRegister from './pages/auth/TeacherRegister';
+import StudentRegister from './pages/auth/StudentRegister';
+import TeacherLogin from './pages/auth/TeacherLogin';
+import StudentLogin from './pages/auth/StudentLogin';
+import ForgotPassword from './pages/auth/ForgetPassword';
+import ParentLogin from './pages/auth/ParentLogin';
 
 function App() {
   useEffect(() => {
@@ -51,6 +62,21 @@ function App() {
           <Route path='videoLessons/watch/url/:lessonType/:lessonId' element={<LessonUrlPage/>}/>
           <Route path='videoLessons/watch/:lessonType/:lessonId' element={<PlayerLessonPage/>}/>
           <Route path='videoLessons/:lessonType/:lessonId' element={<ViewVideoLessonSingle/>}/>
+          <Route path='exams' element={<ShowSubjectsExam/>}/>
+          {/* page for multi question in the same oage */}
+          {/* <Route path='exams/questions' element={<MultiQuestionsInPage/>}/> */}
+          {/* page for one true or false question */}
+          {/* <Route path='exams/questions' element={<SingleQuestionTrueOrrFalse/>}/> */}
+          {/* page for one multi choices question */}
+          <Route path='exams/questions' element={<SingleQuestionChoices/>}/>
+          <Route path='exams/:examType' element={<ShowCategorySubjectsExam/>}/>
+          {/* login and register routes */}
+          <Route path='register/teacher' element={<TeacherRegister/>}/>
+          <Route path='register/student' element={<StudentRegister/>}/>
+          <Route path='login/teacher' element={<TeacherLogin/>}/>
+          <Route path='login/student' element={<StudentLogin/>}/>
+          <Route path='forgot-password' element={<ForgotPassword/>}/>
+          <Route path='login/parent' element={<ParentLogin/>}/>
         </Route>
       </Routes>
     </div>

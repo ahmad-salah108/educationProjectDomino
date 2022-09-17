@@ -58,14 +58,15 @@ return (
                   placeholder="ابحث"/>
                 </form>
                 <div  className='register-links-wrapper'>
-                  <Link to={"#"}
+                  <Link to={"/register/teacher"}
                   className="register-link"
                   >
-                    انشاء حساب</Link>
-                  <Link to={"#"}
+                    انشاء حساب
+                    </Link>
+                  <Link to={"/login/teacher"}
                   className="register-link "
                   >تسجيل دخول</Link>
-                  <Link to={"#"}
+                  <Link to={"/login/parent"}
                   className="register-link"
                   >دخول ولي امر الطالب</Link>
                   <span className='language-translate'>
