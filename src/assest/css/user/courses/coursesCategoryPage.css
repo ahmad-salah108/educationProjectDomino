@@ -1,83 +1,84 @@
-.forums{
-    margin-top: 130px;
+.courses-category{
+    margin-top: 100px;
   }
   
-  .forums .groups-wrapper{
+  .courses-category .courses-wrapper{
     display: flex;
     column-gap: 7rem;
     row-gap: 1.75rem;
     flex-direction: column;
+    align-items: flex-start;
   }
   
   @media (min-width: 768px) {
-    .forums .groups-wrapper{
+    .courses-category .courses-wrapper{
         flex-direction: row;
     }
   }
   
   @media (min-width: 768px) {
-    .forums .category-wrap{
+    .courses-category .category-wrap{
         width: 35%;
     }
   }
   
   @media (min-width: 1024px) {
-    .forums .category-wrap{
+    .courses-category .category-wrap{
         width: 25%;
     }
   }
   
-  .forums .groups-content{
+  .courses-category .courses-content{
     width: 100%;
   }
   
   @media (min-width: 768px) {
-    .forums .groups-content{
+    .courses-category .courses-content{
         width: 60%;
     }
   }
   
   @media (min-width: 1024px) {
-    .forums .groups-content{
+    .courses-category .courses-content{
         width: 70%;
     }
   }
   
   @media (min-width: 1280px) {
-    .forums .groups-content{
+    .courses-category .courses-content{
         width: 78%;
     }
   }
   
-  .forums .forums-title{
+  .courses-category .title{
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 1.5rem;
   }
   
   @media (min-width: 768px) {
-    .forums .titlforums-titlee{
+    .courses-category .title{
         margin-bottom: 3rem;
     }
   }
   
   @media (min-width: 1024px) {
-    .forums .forums-title{
+    .courses-category .title{
         font-size: 32px;
     }
   }
   
   @media (min-width: 768px) {
-    .forums .forums-title{
+    .courses-category .title{
         font-size: 28px;
     }
   }
   
-  .forums .box{
+  .courses-category .box{
     margin-bottom: 5rem
   }
   
-  .forums .box-title{
+  .courses-category .box-title{
     padding-left: 2rem;
     padding-right: 2rem;
     font-size: 26px;
@@ -86,12 +87,12 @@
   }
   
   @media (min-width: 1024px) {
-    .forums .box-title{
+    .courses-category .box-title{
         font-size: 30px;
     }
   }
   
-  .forums .watchAll{
+  .courses-category .watchAll{
     font-size: 18px;
     color:#18A0FB;
     text-align: left;
@@ -102,31 +103,31 @@
     padding-right: 2rem;
   }
   
-  .forums .boxes-wrapper{
+  .courses-category .boxes-wrapper{
     display: grid;
     gap: 2.5rem;
   }
   
   @media (min-width: 640px) {
-    .forums .boxes-wrapper{
+    .courses-category .boxes-wrapper{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   
-  @media (min-width:768px) {
-    .forums .boxes-wrapper{
-        grid-template-columns: repeat(1, minmax(0, 1fr));
+  @media (min-width: 640px) {
+    .courses-category .boxes-wrapper{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   
   @media (min-width: 1024px) {
-    .forums .boxes-wrapper{
+    .courses-category .boxes-wrapper{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   
   @media (min-width: 1280px) {
-    .forums .boxes-wrapper{
+    .courses-category .boxes-wrapper{
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }

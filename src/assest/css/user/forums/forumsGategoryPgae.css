@@ -49,26 +49,26 @@
     }
   }
   
-  .formus-category .title{
+  .formus-category .title-forums{
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 1.5rem;
   }
   
   @media (min-width: 768px) {
-    .formus-category .title{
-        margin-bottom: 3rem/* 48px */;
+    .formus-category .title-forums{
+        margin-bottom: 3rem;
     }
   }
   
   @media (min-width: 1024px) {
-    .formus-category .title{
+    .formus-category .title-forums{
         font-size: 32px;
     }
   }
   
   @media (min-width: 768px) {
-    .formus-category .title{
+    .formus-category .title-forums{
         font-size: 28px;
     }
   }

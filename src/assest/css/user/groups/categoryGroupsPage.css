@@ -49,26 +49,26 @@
     }
   }
   
-  .groups-category .title{
+  .groups-category .title-group{
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 1.5rem;
   }
   
   @media (min-width: 768px) {
-    .groups-category .title{
+    .groups-category .title-group{
         margin-bottom: 3rem/* 48px */;
     }
   }
   
   @media (min-width: 1024px) {
-    .groups-category .title{
+    .groups-category .title-group-grouple{
         font-size: 32px;
     }
   }
   
   @media (min-width: 768px) {
-    .groups-category .title{
+    .groups-category .title-group{
         font-size: 28px;
     }
   }

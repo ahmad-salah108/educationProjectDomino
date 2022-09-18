@@ -1,0 +1,133 @@
+.courses{
+    margin-top: 100px;
+}
+
+.courses .courses-wrapper{
+    display: flex;
+    column-gap: 4rem;
+    row-gap: 1.75rem;
+    flex-direction: column;
+    align-items: start;
+}
+
+@media (min-width: 768px) {
+    .courses .courses-wrapper{
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px) {
+    .courses .category-wrap{
+        width: 35%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .courses .category-wrap{
+        width: 25%;
+    }
+}
+
+.courses .courses-content{
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .courses .courses-content{
+        width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .courses .courses-content{
+        width: 70%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .courses .courses-content{
+        width: 78%;
+    }
+}
+
+.courses .courses-title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .courses .titlcourses-titlee{
+        margin-bottom: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .courses .courses-title{
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 768px) {
+    .courses .courses-title{
+        font-size: 28px;
+    }
+}
+
+.courses .box{
+    margin-bottom: 5rem
+}
+
+.courses .box-title{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 1.75rem;
+}
+
+@media (min-width: 1024px) {
+    .courses .box-title{
+        font-size: 30px;
+    }
+}
+
+.courses .watchAll{
+    font-size: 18px;
+    color:#18A0FB;
+    text-align: left;
+    margin-bottom: 0.75rem;
+    display: block;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.courses .boxes-wrapper{
+    display: grid;
+    gap: 2.5rem;
+}
+
+@media (min-width: 640px) {
+    .courses .boxes-wrapper{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width:768px) {
+    .courses .boxes-wrapper{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .courses .boxes-wrapper{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1280px) {
+    .courses .boxes-wrapper{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
