@@ -32,6 +32,11 @@ import TeacherLogin from './pages/auth/TeacherLogin';
 import StudentLogin from './pages/auth/StudentLogin';
 import ForgotPassword from './pages/auth/ForgetPassword';
 import ParentLogin from './pages/auth/ParentLogin';
+import Courses from './pages/user/courses/Courses';
+import CoursesCategoryPage from './pages/user/courses/CoursesCategoryPage';
+import SingleCourse from './pages/user/courses/SingleCourse';
+import SingleCourseJoin from './pages/user/courses/SingleCourseJoin';
+import DashboardMain from './pages/teacher/DashboardMain';
 
 function App() {
   useEffect(() => {
@@ -77,7 +82,13 @@ function App() {
           <Route path='login/student' element={<StudentLogin/>}/>
           <Route path='forgot-password' element={<ForgotPassword/>}/>
           <Route path='login/parent' element={<ParentLogin/>}/>
+          <Route path='courses' element={<Courses/>}/>
+          <Route path='courses/:courseType' element={<CoursesCategoryPage/>}/>
+          <Route path='courses/:courseType/:courseId' element={<SingleCourse/>}/>
+          {/*if use are subsribed to the course*/}
+          {/* <Route path='courses/:courseType/:courseId' element={<SingleCourseJoin/>}/> */} 
         </Route>
+        <Route path="teacher" element={<DashboardMain/>}/>
       </Routes>
     </div>
   );

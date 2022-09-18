@@ -27,7 +27,7 @@ export default function Forums()
                     <ForumsCategory/>
                 </div>
                 <div className="groups-content">
-                    <h3 className="title">المنتديات و النوادي</h3>
+                    <h3 className="forums-title">المنتديات و النوادي</h3>
                     <div>
                         {
                             data.length>0&&data.map((box,index)=>
