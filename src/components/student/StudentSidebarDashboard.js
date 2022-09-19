@@ -35,7 +35,7 @@ export default function StudebtSidebarDashboard()
                     <AiOutlineClose className='close-btn-icon' onClick={()=>closeSidebar()}/>
                 </div>
                 <img src={teacherImage} alt="load" className='image'/>
-                <h3 className='title'> مرحبا بك .. التلميذ /محمد</h3>
+                <h3 className='title'> مرحبا بك .. <br/>التلميذ /محمد</h3>
                 <h4 className='description-title'>لوحة التحكم</h4>
                 <div className='categories'>
                     <div className='categ-link'>

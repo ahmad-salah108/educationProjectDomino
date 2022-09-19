@@ -40,6 +40,8 @@ import DashboardMain from './pages/teacher/DashboardMain';
 import FinancialSahrePage from './pages/teacher/FinancialSharePage';
 import CalenderPage from './pages/teacher/ClenderPage';
 import LandStudentDashboardPage from './pages/student/LandStudentDashboardPage';
+import FollowUpAttendance from './pages/student/FollowUpAttendance';
+import DetectionPointsStudent from './pages/student/DetectionPointsStudent';
 
 function App() {
   useEffect(() => {
@@ -88,13 +90,15 @@ function App() {
           <Route path='courses' element={<Courses/>}/>
           <Route path='courses/:courseType' element={<CoursesCategoryPage/>}/>
           <Route path='courses/:courseType/:courseId' element={<SingleCourse/>}/>
-          {/*if use are subsribed to the course*/}
+          {/*if the user are subscribed to the course*/}
           {/* <Route path='courses/:courseType/:courseId' element={<SingleCourseJoin/>}/> */} 
         </Route>
         <Route path="teacher" element={<DashboardMain/>}/>
         <Route path='teacher/financial' element={<FinancialSahrePage/>}/>
         <Route path='teacher/calender' element={<CalenderPage/>}/>
         <Route path='student' element={<LandStudentDashboardPage/>}/>
+        <Route path='student/followupattendance' element={<FollowUpAttendance/>}/>
+        <Route path='student/detectionpoints' element={<DetectionPointsStudent/>}/>
       </Routes>
     </div>
   );
