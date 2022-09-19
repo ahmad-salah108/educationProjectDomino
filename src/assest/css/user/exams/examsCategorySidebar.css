@@ -1,4 +1,4 @@
-.exams-bar .title{
+.exams-bar .title-content{
     font-size: 22px;
     font-weight: 700;
     padding-bottom: 0.5rem;
@@ -6,13 +6,13 @@
   }
   
   @media (min-width: 640px) {
-    .exams-bar .title{
+    .exams-bar .title-content{
         font-size: 24px;
     }
   }
   
   @media (min-width: 768px) {
-    .exams-bar .title{
+    .exams-bar .title-content{
         font-size: 26px;
     }
   }

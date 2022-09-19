@@ -5,7 +5,7 @@ import '../../../assest/css/user/psychologist/psychologistSidebar.css'
 export default function PsychologistMenuBar() {
 return (
     <div className="psychologist-bar">
-    <h3 className="title">الفئات</h3>
+    <h3 className="lessons-title">الفئات</h3>
     <ul className="bar-wrapper">
         <Link to={'/psychologist/'}className={`link`}
             >النصائح والارشادات

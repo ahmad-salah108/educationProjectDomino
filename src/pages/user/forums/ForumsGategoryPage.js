@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react'
 import { useParams , Link} from 'react-router-dom'
-// import EmptyGroup from '../../../components/user/util/EmptyCategory';
 import Forum from '../../../components/user/forums/Forum';
 import ForumsCategory from '../../../components/user/forums/ForumsCategoryBar';
 import forumsDate from '../../../data/forumsData';
@@ -11,10 +10,6 @@ export default function ForumsCategoryPage() {
     const {forumType} = useParams();
     const [data,setData] = useState([]);
     const [isNotFound,setIsNotFound]=useState(false);
-
-    useEffect(()=>{
-        // get data from api here
-    },[]);
 
     useEffect(()=>{
         window.scrollTo({
@@ -40,7 +35,7 @@ export default function ForumsCategoryPage() {
         </div>
 
         <div className="groups-content">
-            <h3 className="title">المنتديات و النوادي</h3>
+            <h3 className="title-forums">المنتديات و النوادي</h3>
             <div>
                 {
                     data.length>0?data.map((box,index)=>
