@@ -29,15 +29,6 @@ return (
                 <h2 className='heading-two '>لوجو</h2>
                 <h3 className='heading-three'>أكادميتنا</h3>
             </div>
-            <form className='search-form-first'>
-                  <button className='search-icon'>
-                    <HiOutlineSearch/>
-                  </button>
-                  <input 
-                  className='search-input '
-                  type={"search"}
-                  placeholder="ابحث"/>
-            </form>
               <button className='toggle-show' onClick={()=>setshowNav(p=>!p)}>
                 {!showNav?<AiOutlineMenu/>:<AiOutlineClose/>}
               </button>
