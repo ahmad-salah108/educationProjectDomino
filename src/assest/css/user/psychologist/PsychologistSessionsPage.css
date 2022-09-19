@@ -1,5 +1,6 @@
 .psyo-category{
     margin-top: 130px;
+    padding-bottom: 80px;
   }
   
   .psyo-category .groups-wrapper{
@@ -57,7 +58,7 @@
   
   @media (min-width: 768px) {
     .psyo-category .title{
-        margin-bottom: 3rem/* 48px */;
+        margin-bottom: 3rem;
     }
   }
   

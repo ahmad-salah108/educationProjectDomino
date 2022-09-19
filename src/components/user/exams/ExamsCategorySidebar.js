@@ -5,7 +5,7 @@ import '../../../assest/css/user/exams/examsCategorySidebar.css'
 export default function ExamsCategoryBar() {
     return (
     <div className='exams-bar'>
-        <h3 className="title">الفئات</h3>
+        <h3 className="title-content">الفئات</h3>
         <ul className="bar-wrapper">
             <Link to={'/exams/'} className={`link`}
                 >الجميع

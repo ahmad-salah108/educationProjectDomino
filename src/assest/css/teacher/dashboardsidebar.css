@@ -1,8 +1,12 @@
 .dashbaord-sidebar .sidebar-content{
-    background-color:#FFFFFF;
     padding-bottom: 100px;
     min-height: 100vh;
     overflow: hidden;
+}
+@media (min-width:1024px) {
+    .dashbaord-sidebar .sidebar-content{
+        background-color: #FFFFFF;
+    }
 }
 .dashboard .dashbaord-sidebar .sidebar{
     width: 320px;
@@ -51,19 +55,26 @@
         display: none;
     }
 }
-@media (min-width:1024px)
-{
-    .dashboard .dashbaord-sidebar .show-sideBar-icon{
-        display: none;
-    }
-}
-.dashbaord-sidebar .sidebar-content .show-sideBar-icon{
+.dashbaord-sidebar .sidebar-content .show-sideBar-icon-wrapper{
     font-size:30px;
     cursor: pointer;
+    width: 45px;
+    height: 45px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 6px;
+    background-color: #CC2B5A;
+    margin-top: 16px;
 }
 
-.dashboard .dashbaord-sidebar .notShow-sideBar-icon{
-    display: none;
+@media (min-width:1024px)
+{
+    .dashboard .dashbaord-sidebar .show-sideBar-icon-wrapper{
+        display: none;
+    }
 }
 
 .dashbaord-sidebar .image{

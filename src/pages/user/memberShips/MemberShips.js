@@ -19,10 +19,10 @@ export default function MemberShipsPage()
         <div className="container subscription">
             <div className="subscription-wrapper">
                 <h3 className="title">الاشتراكات او العضويات </h3>
-                <div className="type">
-                    <button className="not-active">شهري</button>
-                    <button className="active">فصلي</button>
-                    <button className="not-active">سنوي</button>
+                <div className="type-members">
+                    <button className="not-active type-btn">شهري</button>
+                    <button className="active type-btn">فصلي</button>
+                    <button className="not-active type-btn">سنوي</button>
                 </div>
                 <div className="content">
                     <div className="memebrship" onClick={()=>navigate('/memberships/regular')}>
@@ -33,7 +33,7 @@ export default function MemberShipsPage()
                         <GoldMembership/>
                         <h3 className="membership-text">العضوية الذهبية </h3>
                     </div>
-                    <div className="silver-member order-2 xl:order-3 memebrship">
+                    <div className="silver-member order-2 xl:order-3 memebrship" onClick={()=>navigate('/memberships/silver')}>
                         <SilverMembership/>
                         <h3 className="membership-text">العضوية الفضية  </h3>
                     </div>
