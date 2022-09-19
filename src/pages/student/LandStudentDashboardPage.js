@@ -1,7 +1,8 @@
-import '../../assest/css/teacher/dashboardmain.css'
+import '../../assest/css/student/dashBoardStudent.css'
 import StudebtSidebarDashboard from "../../components/student/StudentSidebarDashboard";
 import StudentNavbar from "../../components/student/StudentNavbar";
 import TopMainInfo from "../../components/student/TopMainInfo";
+import BasicInformationBoxes from '../../components/student/BasicInformationBoxes';
 
 export default function LandStudentDashboardPage()
 {
@@ -14,6 +15,7 @@ export default function LandStudentDashboardPage()
                 </div>
                 <div className="dashbaord-content">
                     <TopMainInfo/>
+                    <BasicInformationBoxes/>
                 </div>
             </div>
         </div>
