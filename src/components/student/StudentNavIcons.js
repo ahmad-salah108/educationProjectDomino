@@ -1,6 +1,6 @@
 import {MdSettings,MdNotifications,MdEmail} from 'react-icons/md'
-import '../../assest/css/teacher/NavIcons.css'
-export default function TeacherNavIcons()
+import '../../assest/css/student/navIconsStudent.css'
+export default function StudentNavIcons()
 {
     return(
         <div className='nav-icons'>

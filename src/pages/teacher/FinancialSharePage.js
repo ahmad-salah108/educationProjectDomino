@@ -1,19 +1,20 @@
+import Navbar from "../../components/teacher/Navbar";
 import DashboardSidebar from "../../components/teacher/DashboardSidebar";
 import DashbaordContent from "../../components/teacher/DashbaordContent";
-import '../../assest/css/teacher/dashboardmain.css'
-import TeacherNavbar from "../../components/teacher/Navbar";
+import '../../assest/css/teacher/financialShare.css'
 
-export default function DashboardMain()
+export default function FinancialSahrePage()
 {
     return(
         <div className="dashboard">
-            <TeacherNavbar/>
+            <Navbar/>
             <div className="dashboard-wrapper">
                 <div className="dashbaord-sidebar">
                     <DashboardSidebar/>
                 </div>
                 <div className="dashbaord-content">
                     <DashbaordContent/>
+                    <h3 className="financia-title">الحصالة لمالية </h3>
                 </div>
             </div>
         </div>

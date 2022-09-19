@@ -6,10 +6,13 @@ import {VscListFlat} from 'react-icons/vsc'
 import { useState} from 'react'
 import {AiOutlineClose} from 'react-icons/ai'
 import NavIcons from './NavIcons'
+import {IoIosArrowBack} from 'react-icons/io'
 export default function DashboardSidebar()
 {
     const [showSide,setShowSide] = useState(false)
     const [showListIcon,setShowListIcon]=useState(false);
+    const[showLessonsLinks, setShowLessonsLink]=useState(false);
+    const[showClubLinks, setShowClubLink]=useState(false);
 
     const handleShowSidebar=()=>{
         setShowSide(true);
@@ -47,19 +50,45 @@ export default function DashboardSidebar()
                     </div>
                     <div className='categ-link'>
                         <span className='categ-icon'><AiOutlineLaptop className="icon"/></span>
-                        <Link to={'#'} className='link-title'> الدروس المرئية</Link>
+                        <div className='link-moreDetail' onClick={()=>setShowLessonsLink(p=>!p)}>
+                            <Link to={'#'} className='link-title'> الدروس المرئية</Link>
+                            <IoIosArrowBack/>
+                        </div>
                     </div>
+                        <div className={`advanced-links-lesson ${!showLessonsLinks?"hidden":""}`}>
+                            <div className='advance-link'>
+                                <span className='green-circle'></span>
+                                <Link to={"#"}>اضافة درس</Link>
+                            </div>
+                            <div className='advance-link'>
+                                <span className='green-circle'></span>
+                                <Link to={"#"}>الاطلاع علي الدروس</Link>
+                            </div>
+                        </div>
                     <div className='categ-link'>
                         <span className='categ-icon'><AiOutlineLaptop className="icon"/></span>
-                        <Link to={'#'} className='link-title'> المنتديات والنوادي</Link>
+                        <div className='link-moreDetail' onClick={()=>setShowClubLink(p=>!p)}>
+                            <Link to={'#'} className='link-title'> المنتديات والنوادي</Link>
+                            <IoIosArrowBack/>
+                        </div>
                     </div>
+                    <div className={`advanced-links-club ${!showClubLinks?"hidden":""}`}>
+                            <div className='advance-link'>
+                                <span className='green-circle'></span>
+                                <Link to={"#"}>اضافة منتدي او نادي</Link>
+                            </div>
+                            <div className='advance-link'>
+                                <span className='green-circle'></span>
+                                <Link to={"#"}>الاطلاع علي المنتديات والنوادي</Link>
+                            </div>
+                        </div>
                     <div className='categ-link'>
                         <span className='categ-icon'><AiOutlineLaptop className="icon"/></span>
                         <Link to={'#'} className='link-title'> متابعة الحضور والغياب</Link>
                     </div>
                     <div className='categ-link'>
                         <span className='categ-icon'><AiOutlineLaptop className="icon"/></span>
-                        <Link to={'#'} className='link-title'> الحصالة المالية</Link>
+                        <Link to={'/teacher/financial'} className='link-title'> الحصالة المالية</Link>
                     </div>
                     <NavIcons/>
                 </div>

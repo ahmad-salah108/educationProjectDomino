@@ -37,6 +37,9 @@ import CoursesCategoryPage from './pages/user/courses/CoursesCategoryPage';
 import SingleCourse from './pages/user/courses/SingleCourse';
 import SingleCourseJoin from './pages/user/courses/SingleCourseJoin';
 import DashboardMain from './pages/teacher/DashboardMain';
+import FinancialSahrePage from './pages/teacher/FinancialSharePage';
+import CalenderPage from './pages/teacher/ClenderPage';
+import LandStudentDashboardPage from './pages/student/LandStudentDashboardPage';
 
 function App() {
   useEffect(() => {
@@ -89,6 +92,9 @@ function App() {
           {/* <Route path='courses/:courseType/:courseId' element={<SingleCourseJoin/>}/> */} 
         </Route>
         <Route path="teacher" element={<DashboardMain/>}/>
+        <Route path='teacher/financial' element={<FinancialSahrePage/>}/>
+        <Route path='teacher/calender' element={<CalenderPage/>}/>
+        <Route path='student' element={<LandStudentDashboardPage/>}/>
       </Routes>
     </div>
   );

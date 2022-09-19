@@ -92,6 +92,13 @@
     margin-bottom: 30px;
 }
 
+.dashbaord-sidebar .description-title{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
 .dashbaord-sidebar .categories{
 margin-top: 60px;
 }
@@ -112,43 +119,6 @@ margin-top: 60px;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-}
-
-.dashbaord-sidebar .categ-link .link-moreDetail{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.advanced-links-lesson , .advanced-links-club{
-    margin-bottom: 14px;
-}
-
-.advanced-links-lesson.hidden , .advanced-links-club.hidden{
-    display: none;
-}
-
-.advanced-links-lesson .advance-link , .advanced-links-club .advance-link{
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding-right: 30px;
-}
-
-.advanced-links-lesson .advance-link a , .advanced-links-club .advance-link a{
-    color: #000000;
-    font-weight: 500;
-    font-size: 18px;
-}
-
-.advanced-links-lesson .advance-link .green-circle , .advanced-links-club .advance-link .green-circle{
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #4DCABD;
 }
 
 .dashbaord-sidebar .categ-link .link-title{

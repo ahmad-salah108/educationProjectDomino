@@ -1,8 +1,8 @@
-import '../../assest/css/teacher/Navbar.css'
+import '../../assest/css/student/studentNavbar.css'
 import {BsSearch} from 'react-icons/bs'
-import TeacherNavIcons from './NavIcons'
+import TeacherNavIcons from '../teacher/NavIcons'
 
-export default function TeacherNavbar()
+export default function StudentNavbar()
 {
     return(
         <div className='navbar'>
@@ -14,7 +14,7 @@ export default function TeacherNavbar()
                 <div className='nav-left'>
                     <form className='search-box'>
                         <BsSearch className='search-icon'/>
-                        <input className='search-input' placeholder='ابحث'/>
+                        <input type={"search"} className='search-input' placeholder='ابحث'/>
                     </form>
                     <TeacherNavIcons/>
                 </div>
