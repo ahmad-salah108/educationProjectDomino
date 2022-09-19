@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react'
 import { useParams , Link} from 'react-router-dom'
-// import EmptyGroup from '../../../components/user/util/EmptyCategory';
 import Group from '../../../components/user/groups/Group';
 import GroupsCategoryBar from '../../../components/user/groups/GroupCategoryBar';
 import groupsData from '../../../data/groupsData';
@@ -32,14 +31,14 @@ export default function GroupsCategory() {
     },[groupType]);
 
 
-  return (
+return (
     <div className="groups-category container">
     <div className="groups-wrapper">
         <div className="category-wrap">
             <GroupsCategoryBar/>
         </div>
         <div className="groups-content">
-            <h3 className="title">المجموعات</h3>
+            <h3 className="title-group">المجموعات</h3>
             <div>
                 {
                     data.length>0?data.map((box,index)=>

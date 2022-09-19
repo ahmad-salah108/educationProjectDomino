@@ -25,7 +25,7 @@
     }
   }
   
-  .subscription .type{
+  .subscription .type-members{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 6rem;
@@ -34,9 +34,12 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     border:1px solid #C3E1E8;
     background-color: #FFFFFF;
+    height: 80px;
+  }
+
+  .subscription .type-members .type-btn{
     font-size: 22px;
     font-weight: 700;
-    height: 80px;
   }
   @media (min-width: 768px) {
     .subscription .type{

@@ -1,4 +1,4 @@
-.lessons-bar .title{
+.lessons-bar .title-lessons{
     font-size: 22px;
     font-weight: 700;
     padding-bottom: 0.5rem;
@@ -6,13 +6,13 @@
   }
   
   @media (min-width: 640px) {
-    .lessons-bar .title{
+    .lessons-bar .title-lessons{
         font-size: 24px;
     }
   }
   
   @media (min-width: 768px) {
-    .lessons-bar .title{
+    .lessons-bar .title-lessons{
         font-size: 26px;
     }
   }

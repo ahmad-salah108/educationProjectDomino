@@ -1,6 +1,6 @@
 .request-session{
     margin-top: 130px;
-    margin-bottom: 50px;
+    padding-bottom: 80px;
   }
   .request-session .request-wrapper{
     display: flex;
@@ -26,7 +26,7 @@
   }
   @media (min-width: 1280px) {
     .request-session .menu-wrapper{
-        width: 15%;
+        width: 22%;
     }
   }
   

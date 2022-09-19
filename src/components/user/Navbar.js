@@ -35,7 +35,7 @@ return (
             <div className={`links-wrapper ${showNav?"show":"notShow"}`} ref={ref}>
                 <div className='pages-links-wrapper'>
                   <Link to='' className={"page-link active"}>الرئيسية</Link>
-                  <Link to={"/d"} className={"page-link"}>الدورات</Link>
+                  <Link to={"/courses"} className={"page-link"}>الدورات</Link>
                   <Link to={"/memberships"} className={"page-link"}>الاشتراكات</Link>
                   <Link to={"/d"} className={"page-link"}>اتصل بنا</Link>
                 </div>

@@ -6,7 +6,7 @@ export default function LessonsBar() {
   return (
     <>
      <div className="lessons-bar">
-    <h3 className="title">الفصل الدراسي </h3>
+    <h3 className="title-lessons">الفصل الدراسي </h3>
     <ul className="bar-wrapper">
         <Link to={'/videoLessons/'}className={`link
         ${window.location.pathname==="/groups"&&"acive-line"}`}
@@ -21,7 +21,7 @@ export default function LessonsBar() {
     </ul>
 </div>
     <div className="lessons-bar">
-    <h3 className="title">الفئات</h3>
+    <h3 className="title-lessons">الفئات</h3>
     <ul className="bar-wrapper">
         <Link to={'/videoLessons/'}className={`link 
         ${window.location.pathname==="/videoLessons"&&"active-line"}`}
@@ -48,7 +48,7 @@ export default function LessonsBar() {
     </ul>
 </div>
 <div className="lessons-bar">
-    <h3 className="title"> المحاور  </h3>
+    <h3 className="title-lessons"> المحاور  </h3>
     <ul className="bar-wrapper">
         <Link to={'/videoLessons/'}className={`link 
         ${window.location.pathname==="/groups"&&"active-line"}`}

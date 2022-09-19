@@ -27,7 +27,7 @@ export default function DashboardSidebar()
 
     return(
         <div className='container sidebar-content'>
-            <div className={`show-sideBar-icon ${showListIcon?"notShow-sideBar-icon":""}`} onClick={()=>handleShowSidebar()}>
+            <div className={`show-sideBar-icon-wrapper`} onClick={()=>handleShowSidebar()}>
                 <VscListFlat className='show-sideBar-icon'/>
             </div>
             <div className={`sidebar ${showSide?"show":""}`} >
