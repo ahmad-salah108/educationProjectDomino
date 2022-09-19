@@ -65,22 +65,22 @@ export default function GoldenDashboard()
                         <Link to={'/student/detectionpoints'} className='link-title'> لوحتي التعليمية</Link>
                     </div>
                     <div className='categ-link'>
-                        <Link to={'#'} className='link-title'>دوراتي التدريبية </Link>
+                        <Link to={'/goldStudent/myCourses'} className='link-title'>دوراتي التدريبية </Link>
                     </div>
                     <div className='categ-link'>
-                        <Link to={'#'} className='link-title'>دروسي المرئية </Link>
+                        <Link to={'/goldStudent/myVideoLessons'} className='link-title'>دروسي المرئية </Link>
                     </div>
                     <div className='categ-link'>
                         <Link to={'/student/followupattendance'} className='link-title'>اختباراتي </Link>
                     </div>
                     <div className='categ-link'>
-                        <Link to={'/student/followupattendance'} className='link-title'>مجموعاتي   </Link>
+                        <Link to={'/goldStudent/myGroups'} className='link-title'>مجموعاتي   </Link>
                     </div>
                     <div className='categ-link'>
                         <Link to={'/student/followupattendance'} className='link-title'>النوادي و منتدياتي  </Link>
                     </div>
                     <div className='categ-link'>
-                        <Link to={'/student/followupattendance'} className='link-title'>جلساتي الاخصائي النفسي  </Link>
+                        <Link to={'/goldStudent/mySessions'} className='link-title'>جلساتي الاخصائي النفسي  </Link>
                     </div>
                     <div className='categ-link'>
                         <Link to={'/student/followupattendance'} className='link-title'>مفضلتي  </Link>

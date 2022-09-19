@@ -43,6 +43,13 @@ import LandStudentDashboardPage from './pages/student/LandStudentDashboardPage';
 import FollowUpAttendance from './pages/student/FollowUpAttendance';
 import DetectionPointsStudent from './pages/student/DetectionPointsStudent';
 import GoldControlBoard from './pages/goldMemberShip/GoldControlBoard';
+import MyVideoLessons from './pages/goldMemberShip/MyVideoLessons';
+import MyVideoLessonsNotFound from './pages/goldMemberShip/MyVideoLessonsNotFound';
+import MyCoursesNotFound from './pages/goldMemberShip/MyCoursesNotFound';
+import MyCourses from './pages/goldMemberShip/MyCourses';
+import MySessions from './pages/goldMemberShip/MySessions';
+import MyGroups from './pages/goldMemberShip/MyGroups';
+import MySessionsNotFound from './pages/goldMemberShip/MySessionsNotFound';
 
 function App() {
   useEffect(() => {
@@ -102,8 +109,16 @@ function App() {
         <Route path='student' element={<LandStudentDashboardPage/>}/>
         <Route path='student/followupattendance' element={<FollowUpAttendance/>}/>
         <Route path='student/detectionpoints' element={<DetectionPointsStudent/>}/>
-        {/** student */}
+        {/** golden  student  dashboard*/}
         <Route path='goldStudent' element={<GoldControlBoard/>}/>
+        <Route path='goldStudent/myCourses' element={<MyCourses/>}/>
+        <Route path='goldStudent/myCourses/notFound' element={<MyCoursesNotFound/>}/>
+        <Route path='goldStudent/myVideoLessons' element={<MyVideoLessons/>}/>
+        <Route path='goldStudent/myVideoLessons/notFound' element={<MyVideoLessonsNotFound/>}/>
+        <Route path='goldStudent/mySessions' element={<MySessions/>}/>
+        <Route path='goldStudent/myGroups' element={<MyGroups/>}/>
+        <Route path='goldStudent/myGroups/notFound' element={<MyCoursesNotFound/>}/>
+        <Route path='goldStudent/mySessions/notFound' element={<MySessionsNotFound/>}/>
       </Routes>
     </div>
   );
