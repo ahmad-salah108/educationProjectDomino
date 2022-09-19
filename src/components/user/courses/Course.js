@@ -2,10 +2,12 @@ import '../../../assest/css/user/courses/course.css'
 import {BsCoin,BsShare} from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import vector3 from '../../../images/icons/Vector (5).png'
+import {motion} from 'framer-motion'
 export default function Course({course})
 {
     return(
-        <div className='course'>
+        <motion.div className='course'
+        initial={{opacity:0, y:"-10px"}} animate={{opacity:1, y:"0px",transition:{duration:0.4}}}>
             <img src={course.img} alt="load" className='image'/>
             <div className='course-content'>
                 <div className='course-header'>
@@ -26,6 +28,6 @@ export default function Course({course})
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
