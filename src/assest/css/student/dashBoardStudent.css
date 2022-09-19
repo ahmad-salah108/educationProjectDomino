@@ -97,6 +97,8 @@
     margin: 10px 0;
     font-size: 22px;
     font-weight: bold;
+    display: block;
+    color: #242424;
 }
 
 .dashbaord-sidebar .categories{

@@ -7,6 +7,7 @@ import { useState} from 'react'
 import {AiOutlineClose} from 'react-icons/ai'
 import NavIcons from './NavIcons'
 import {IoIosArrowBack} from 'react-icons/io'
+import { useRef , useEffect} from 'react'
 export default function DashboardSidebar()
 {
     const [showSide,setShowSide] = useState(false)
@@ -26,6 +27,22 @@ export default function DashboardSidebar()
         },100);
     }
 
+    const ref = useRef(null);
+
+    const handleClickOutside = (event) => {
+        if (ref.current && !ref.current.contains(event.target)) {
+            setShowSide(p=>false);
+            document.body.style.overflowY="visible"
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('click', handleClickOutside, true);
+        return () => {
+            document.removeEventListener('click', handleClickOutside, true);
+        };
+    }, []);
+
 
 
     return(
@@ -33,7 +50,7 @@ export default function DashboardSidebar()
             <div className={`show-sideBar-icon-wrapper`} onClick={()=>handleShowSidebar()}>
                 <VscListFlat className='show-sideBar-icon'/>
             </div>
-            <div className={`sidebar ${showSide?"show":""}`} >
+            <div className={`sidebar ${showSide?"show":""}`} ref={ref}>
                 <div className='close-btn'>
                     <AiOutlineClose className='close-btn-icon' onClick={()=>closeSidebar()}/>
                 </div>
