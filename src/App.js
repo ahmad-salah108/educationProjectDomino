@@ -42,7 +42,7 @@ import CalenderPage from './pages/teacher/ClenderPage';
 import LandStudentDashboardPage from './pages/student/LandStudentDashboardPage';
 import FollowUpAttendance from './pages/student/FollowUpAttendance';
 import DetectionPointsStudent from './pages/student/DetectionPointsStudent';
-import GoldMemberShipMainPage from './pages/goldMemberShip/GoldMemberShipMainPage';
+import GoldControlBoard from './pages/goldMemberShip/GoldControlBoard';
 
 function App() {
   useEffect(() => {
@@ -94,13 +94,16 @@ function App() {
           {/*if the user are subscribed to the course*/}
           {/* <Route path='courses/:courseType/:courseId' element={<SingleCourseJoin/>}/> */} 
         </Route>
+        {/** teacher dashboard */}
         <Route path="teacher" element={<DashboardMain/>}/>
         <Route path='teacher/financial' element={<FinancialSahrePage/>}/>
         <Route path='teacher/calender' element={<CalenderPage/>}/>
+        {/** student dashboard */}
         <Route path='student' element={<LandStudentDashboardPage/>}/>
         <Route path='student/followupattendance' element={<FollowUpAttendance/>}/>
         <Route path='student/detectionpoints' element={<DetectionPointsStudent/>}/>
-        <Route path='/goldUser' element={<GoldMemberShipMainPage/>}/>
+        {/** student */}
+        <Route path='goldStudent' element={<GoldControlBoard/>}/>
       </Routes>
     </div>
   );
