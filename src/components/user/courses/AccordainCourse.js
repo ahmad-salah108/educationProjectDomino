@@ -3,6 +3,7 @@ import '../../../assest/css/user/courses/AccordinCourse.css'
 import {IoIosVideocam} from 'react-icons/io'
 import {AiOutlineFilePdf} from 'react-icons/ai'
 import {BiLockAlt} from 'react-icons/bi'
+import {motion , AnimatePresence} from 'framer-motion'
 export default function AccordinCourse({box})
 {
     const [show,setShow] = useState(false)
@@ -12,8 +13,13 @@ export default function AccordinCourse({box})
                     <span>{box.title} </span>
                     <button className="btn" onClick={()=>setShow(back=>!back)}>{show?"-":"+"}</button>
             </div>
+            <AnimatePresence>
             {show&&
-            <div className='boxes-unit'>
+            <motion.div className='boxes-unit' 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 , transition:{duration:0.4}}}
+            exit={{ opacity: 0 , transition:{duration:0.2}}}
+                >
                 {
                     box.content.map((b,index)=>
                     {
@@ -30,7 +36,9 @@ export default function AccordinCourse({box})
                         )
                     })
                 }
-            </div>}
+            </motion.div>
+            }
+            </AnimatePresence>
         </div>
     )
 }
