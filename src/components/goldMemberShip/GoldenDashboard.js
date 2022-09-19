@@ -42,7 +42,7 @@ export default function GoldenDashboard()
 
 
     return(
-        <div className='container sidebar-content-golden'>
+        <div className=' sidebar-content-golden'>
             <div className={`show-sideBar-icon-wrapper`} onClick={()=>handleShowSidebar()}>
                 <VscListFlat className='show-sideBar-icon'/>
             </div>
@@ -58,7 +58,7 @@ export default function GoldenDashboard()
                 <h4 className='id-value'>ID 010 </h4>
                 <div className='golden-image-wrapper'>
                     <img src={goldenImage} alt=""/>
-                    <h4>عضوية ذهبية </h4>
+                    <h4 >عضوية ذهبية </h4>
                 </div>
                 <div className='categories'>
                     <div className='categ-link'>
