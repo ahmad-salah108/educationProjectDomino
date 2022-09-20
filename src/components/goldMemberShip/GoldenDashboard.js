@@ -77,13 +77,13 @@ export default function GoldenDashboard()
                         <Link to={'/goldStudent/myGroups'} className='link-title'>مجموعاتي   </Link>
                     </div>
                     <div className='categ-link'>
-                        <Link to={'/student/followupattendance'} className='link-title'>النوادي و منتدياتي  </Link>
+                        <Link to={'/goldStudent/myForums'} className='link-title'>النوادي و منتدياتي  </Link>
                     </div>
                     <div className='categ-link'>
                         <Link to={'/goldStudent/mySessions'} className='link-title'>جلساتي الاخصائي النفسي  </Link>
                     </div>
                     <div className='categ-link'>
-                        <Link to={'/student/followupattendance'} className='link-title'>مفضلتي  </Link>
+                        <Link to={'/goldStudent/myFavorites'} className='link-title'>مفضلتي  </Link>
                     </div>
                     <div className='categ-link'>
                         <Link to={'/student/followupattendance'} className='link-title'>جدولي المهام   </Link>

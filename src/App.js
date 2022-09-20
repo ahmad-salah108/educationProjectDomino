@@ -50,6 +50,10 @@ import MyCourses from './pages/goldMemberShip/MyCourses';
 import MySessions from './pages/goldMemberShip/MySessions';
 import MyGroups from './pages/goldMemberShip/MyGroups';
 import MySessionsNotFound from './pages/goldMemberShip/MySessionsNotFound';
+import MyForums from './pages/goldMemberShip/MyForums';
+import MyForumsNotFound from './pages/goldMemberShip/MyForumsNotFound';
+import MyFavorites from './pages/goldMemberShip/MyFavorites';
+import MyFavoritesNotFound from './pages/goldMemberShip/MyFavoritesNotFound';
 
 function App() {
   useEffect(() => {
@@ -119,6 +123,10 @@ function App() {
         <Route path='goldStudent/myGroups' element={<MyGroups/>}/>
         <Route path='goldStudent/myGroups/notFound' element={<MyCoursesNotFound/>}/>
         <Route path='goldStudent/mySessions/notFound' element={<MySessionsNotFound/>}/>
+        <Route path='goldStudent/myForums' element={<MyForums/>}/>
+        <Route path='goldStudent/myForums/notFound' element={<MyForumsNotFound/>}/>
+        <Route path='goldStudent/myFavorites' element={<MyFavorites/>}/>
+        <Route path='goldStudent/myFavorites/notFound' element={<MyFavoritesNotFound/>}/>
       </Routes>
     </div>
   );

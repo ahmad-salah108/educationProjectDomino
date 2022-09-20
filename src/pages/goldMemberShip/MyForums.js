@@ -2,12 +2,12 @@ import '../../assest/css/student/dashBoardStudent.css'
 import GoldenNavbar from '../../components/goldMemberShip/GoldenNavbar';
 import GoldenDashboard from '../../components/goldMemberShip/GoldenDashboard';
 import GoldTopMain from '../../components/goldMemberShip/GoldTopMain';
-import '../../assest/css/goldMemberShip/myCourses.css'
+import '../../assest/css/goldMemberShip/myForums.css'
 import { Link } from 'react-router-dom';
 import img1 from '../../images/منتدي 1.webp'
-import Course from '../../components/user/courses/Course';
+import Forum from '../../components/user/forums/Forum'
 
-export default function MyCourses()
+export default function MyForums()
 {
 
     const data=[{
@@ -17,30 +17,26 @@ export default function MyCourses()
             {
                 id:"1",
                 img:img1,
-                title:"حل تمارين كتاب العربي",
+                title:"نادي الكتابة",
                 teacher:"أنور نور",
-                price:"100"
             },
             {
-                id:"3",
+                id:"1",
                 img:img1,
-                title:"حل تمارين كتاب العربي",
+                title:"نادي الكتابة",
                 teacher:"أنور نور",
-                price:"100"
             },
             {
-                id:"3",
+                id:"1",
                 img:img1,
-                title:"حل تمارين كتاب العربي",
+                title:"نادي الكتابة",
                 teacher:"أنور نور",
-                price:"100"
             },
             {
-                id:"4",
+                id:"1",
                 img:img1,
-                title:"حل تمارين كتاب العربي",
-                teacher:"أنور نور",
-                price:"100"
+                title:"نادي الكتابة",
+                teacher:"أنور نور",            
             }
         ]
     },
@@ -55,18 +51,18 @@ export default function MyCourses()
                 </div>
                 <div className="dashbaord-content">
                     <GoldTopMain/>
-                    <h2 className='myCourses-title'>الدورات التدريبية التي تم الاشتراك بها </h2>
+                    <h2 className='myForums-title'>النوادي والمنتديات التي تم الانضمام اليها </h2>
                     <div>
                         {
                             data.length>0&&data.map((box,index)=>
                             {
                                 return<div key={index+'m1'} className="box">
-                                    <div className="myCourses-wrapper">
+                                    <div className="myForums-wrapper">
                                         {
-                                            box.groups.map((course,index)=>
+                                            box.groups.map((forum,index)=>
                                             {
-                                                return <Link to={`/courses/${box.type}/${course.id}`} key={index+'z1'} > 
-                                                    <Course course={course}/>
+                                                return <Link to={`/forums/${box.type}/${forum.id}`} key={index+'z1'} > 
+                                                    <Forum forum={forum}/>
                                                 </Link>
                                             })
                                         }
@@ -76,8 +72,8 @@ export default function MyCourses()
                         }
                     </div>
                     <div className='navgation-wrapper'>
-                        <span className='navigation-text'>للانتقال الي الدورات التدربية</span>
-                        <Link to={"/courses"} className="navigation-link">هنا</Link>
+                        <span className='navigation-text'>للانتقال الي النوادي والمنتديات اضغط</span>
+                        <Link to={"/forums"} className="navigation-link">هنا</Link>
                     </div>
                 </div>
             </div>
