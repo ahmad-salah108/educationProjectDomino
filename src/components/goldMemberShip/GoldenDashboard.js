@@ -62,7 +62,7 @@ export default function GoldenDashboard()
                 </div>
                 <div className='categories'>
                     <div className='categ-link'>
-                        <Link to={'/student/detectionpoints'} className='link-title'> لوحتي التعليمية</Link>
+                        <Link to={'/goldStudent'} className='link-title'> لوحتي التعليمية</Link>
                     </div>
                     <div className='categ-link'>
                         <Link to={'/goldStudent/myCourses'} className='link-title'>دوراتي التدريبية </Link>
@@ -86,7 +86,7 @@ export default function GoldenDashboard()
                         <Link to={'/goldStudent/myFavorites'} className='link-title'>مفضلتي  </Link>
                     </div>
                     <div className='categ-link'>
-                        <Link to={'/student/followupattendance'} className='link-title'>جدولي المهام   </Link>
+                        <Link to={'/goldStudent/tasksTable'} className='link-title'>جدولي المهام   </Link>
                     </div>
                     <div className='categ-link'>
                         <Link to={'/student/followupattendance'} className='link-title'>انجازاتي</Link>
@@ -95,7 +95,7 @@ export default function GoldenDashboard()
                         <Link to={'/student/followupattendance'} className='link-title'>لوحة الشرف </Link>
                     </div>
                     <div className='categ-link'>
-                        <Link to={'/student/followupattendance'} className='link-title'>الدعم الفني  </Link>
+                        <Link to={'/goldStudent/technicalsupport'} className='link-title'>الدعم الفني  </Link>
                     </div>
                 </div>
             </div>

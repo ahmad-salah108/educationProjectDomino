@@ -58,6 +58,13 @@ import MyExams from './pages/goldMemberShip/myExams';
 import MySingleExam from './pages/goldMemberShip/MySingleExam';
 import AccountSetting from './pages/goldMemberShip/AccountSetting';
 
+import TechnicalSupport from './pages/goldMemberShip/TechnicalSupport';
+import RequestTicket from './pages/goldMemberShip/RequestTicket';
+import PreviousTickets from './pages/goldMemberShip/PreviousTickets';
+import EmptyPreviousTickets from './pages/goldMemberShip/EmptyPreviousTickets';
+import GoldTasksTable from './pages/goldMemberShip/TasksTable';
+
+
 function App() {
   useEffect(() => {
     AOS.init({
@@ -133,6 +140,11 @@ function App() {
         <Route path='goldStudent/myExams' element={<MyExams/>}/>
         <Route path='goldStudent/myExams/:examId' element={<MySingleExam/>}/>
         <Route path='goldStudent/setting/account' element={<AccountSetting/>}/>
+        <Route path='goldStudent/technicalsupport' element={<TechnicalSupport/>}/>
+        <Route path='goldStudent/technicalsupport/requsetTicket' element={<RequestTicket/>}/>
+        <Route path='goldStudent/technicalsupport/previousTickets' element={<PreviousTickets/>}/>
+        <Route path='goldStudent/technicalsupport/emptypreviousTickets' element={<EmptyPreviousTickets/>}/>
+        <Route path='goldStudent/tasksTable' element={<GoldTasksTable/>}/>
       </Routes>
     </div>
   );
