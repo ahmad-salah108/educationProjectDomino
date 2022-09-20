@@ -1,0 +1,51 @@
+.account-setting{
+    min-height: 100vh;
+    background-color: #E5E5E5;
+}
+
+.account-setting .setting-wrapper{
+    margin-top: 30px;
+}
+
+.setting-wrapper .setting-title{
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.015em;
+    color: #000000;
+    margin-top: 10px;
+}
+@media (min-width:640px)
+{
+    .setting-wrapper .setting-title{
+        font-size: 28px;
+    }
+}
+
+.account-setting .top-links-setting{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+.account-setting .top-links-setting .link{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.015em;
+    color: #000000;
+} 
+@media (min-width:640px)
+{
+    .account-setting .top-links-setting .link{
+        font-size: 26px;
+    }
+}
+.account-setting .top-links-setting .link.active-link{
+    position: relative;
+}
+.account-setting .top-links-setting .link.active-link::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: red;
+}

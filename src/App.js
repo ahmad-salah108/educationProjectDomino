@@ -54,6 +54,9 @@ import MyForums from './pages/goldMemberShip/MyForums';
 import MyForumsNotFound from './pages/goldMemberShip/MyForumsNotFound';
 import MyFavorites from './pages/goldMemberShip/MyFavorites';
 import MyFavoritesNotFound from './pages/goldMemberShip/MyFavoritesNotFound';
+import MyExams from './pages/goldMemberShip/myExams';
+import MySingleExam from './pages/goldMemberShip/MySingleExam';
+import AccountSetting from './pages/goldMemberShip/AccountSetting';
 
 function App() {
   useEffect(() => {
@@ -127,6 +130,9 @@ function App() {
         <Route path='goldStudent/myForums/notFound' element={<MyForumsNotFound/>}/>
         <Route path='goldStudent/myFavorites' element={<MyFavorites/>}/>
         <Route path='goldStudent/myFavorites/notFound' element={<MyFavoritesNotFound/>}/>
+        <Route path='goldStudent/myExams' element={<MyExams/>}/>
+        <Route path='goldStudent/myExams/:examId' element={<MySingleExam/>}/>
+        <Route path='goldStudent/setting/account' element={<AccountSetting/>}/>
       </Routes>
     </div>
   );

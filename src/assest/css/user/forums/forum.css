@@ -38,6 +38,9 @@
     font-size: 18px;
     color: white;
     border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .forum-wrapper .wrapper-content .controls .love-icon{
     width: 35px;

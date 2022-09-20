@@ -61,8 +61,8 @@ export default function MyForums()
                                         {
                                             box.groups.map((forum,index)=>
                                             {
-                                                return <Link to={`/forums/${box.type}/${forum.id}`} key={index+'z1'} > 
-                                                    <Forum forum={forum}/>
+                                                return <Link to={`/goldStudent/myForums/${box.type}/${forum.id}`} key={index+'z1'} > 
+                                                    <Forum forum={forum} goldurl={`/goldStudent/myForums/${box.type}/${forum.id}`}/>
                                                 </Link>
                                             })
                                         }

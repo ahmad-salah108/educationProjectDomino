@@ -71,7 +71,7 @@ export default function GoldenDashboard()
                         <Link to={'/goldStudent/myVideoLessons'} className='link-title'>دروسي المرئية </Link>
                     </div>
                     <div className='categ-link'>
-                        <Link to={'/student/followupattendance'} className='link-title'>اختباراتي </Link>
+                        <Link to={'/goldStudent/myExams'} className='link-title'>اختباراتي </Link>
                     </div>
                     <div className='categ-link'>
                         <Link to={'/goldStudent/myGroups'} className='link-title'>مجموعاتي   </Link>
