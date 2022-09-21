@@ -67,6 +67,7 @@ import GoldSingleForum from './pages/goldMemberShip/GoldSingleForum';
 import PasswordSetting from './pages/goldMemberShip/PasswordSetting';
 import OneConversation from './pages/goldMemberShip/OneConversation';
 import GroupConversation from './pages/goldMemberShip/GroupConversation';
+import NotificationPage from './pages/goldMemberShip/NotificationPage';
 
 
 function App() {
@@ -154,6 +155,7 @@ function App() {
         <Route path='goldStudent/technicalsupport/emptypreviousTickets' element={<EmptyPreviousTickets/>}/>
         <Route path='goldStudent/tasksTable' element={<GoldTasksTable/>}/>
         <Route path='goldStudent/myForums/:fromType/:froumId' element={<GoldSingleForum/>}/>
+        <Route path='goldStudent/notification' element={<NotificationPage/>}/>
       </Routes>
     </div>
   );
