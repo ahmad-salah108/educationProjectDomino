@@ -63,6 +63,7 @@ import RequestTicket from './pages/goldMemberShip/RequestTicket';
 import PreviousTickets from './pages/goldMemberShip/PreviousTickets';
 import EmptyPreviousTickets from './pages/goldMemberShip/EmptyPreviousTickets';
 import GoldTasksTable from './pages/goldMemberShip/TasksTable';
+import GoldSingleForum from './pages/goldMemberShip/GoldSingleForum';
 
 
 function App() {
@@ -145,6 +146,7 @@ function App() {
         <Route path='goldStudent/technicalsupport/previousTickets' element={<PreviousTickets/>}/>
         <Route path='goldStudent/technicalsupport/emptypreviousTickets' element={<EmptyPreviousTickets/>}/>
         <Route path='goldStudent/tasksTable' element={<GoldTasksTable/>}/>
+        <Route path='goldStudent/myForums/:fromType/:froumId' element={<GoldSingleForum/>}/>
       </Routes>
     </div>
   );
