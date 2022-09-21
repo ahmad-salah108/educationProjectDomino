@@ -65,6 +65,8 @@ import EmptyPreviousTickets from './pages/goldMemberShip/EmptyPreviousTickets';
 import GoldTasksTable from './pages/goldMemberShip/TasksTable';
 import GoldSingleForum from './pages/goldMemberShip/GoldSingleForum';
 import PasswordSetting from './pages/goldMemberShip/PasswordSetting';
+import OneConversation from './pages/goldMemberShip/OneConversation';
+import GroupConversation from './pages/goldMemberShip/GroupConversation';
 
 
 function App() {
@@ -144,6 +146,9 @@ function App() {
         <Route path='goldStudent/setting/account' element={<AccountSetting/>}/>
         <Route path='goldStudent/setting/password' element={<PasswordSetting/>}/>
         <Route path='goldStudent/technicalsupport' element={<TechnicalSupport/>}/>
+        <Route path='goldStudent/oneMessage' element={<OneConversation/>}/>
+        <Route path='goldStudent/groupMessage' element={<GroupConversation/>}/>
+
         <Route path='goldStudent/technicalsupport/requsetTicket' element={<RequestTicket/>}/>
         <Route path='goldStudent/technicalsupport/previousTickets' element={<PreviousTickets/>}/>
         <Route path='goldStudent/technicalsupport/emptypreviousTickets' element={<EmptyPreviousTickets/>}/>
