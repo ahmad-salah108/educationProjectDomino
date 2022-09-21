@@ -64,6 +64,7 @@ import PreviousTickets from './pages/goldMemberShip/PreviousTickets';
 import EmptyPreviousTickets from './pages/goldMemberShip/EmptyPreviousTickets';
 import GoldTasksTable from './pages/goldMemberShip/TasksTable';
 import GoldSingleForum from './pages/goldMemberShip/GoldSingleForum';
+import PasswordSetting from './pages/goldMemberShip/PasswordSetting';
 
 
 function App() {
@@ -141,6 +142,7 @@ function App() {
         <Route path='goldStudent/myExams' element={<MyExams/>}/>
         <Route path='goldStudent/myExams/:examId' element={<MySingleExam/>}/>
         <Route path='goldStudent/setting/account' element={<AccountSetting/>}/>
+        <Route path='goldStudent/setting/password' element={<PasswordSetting/>}/>
         <Route path='goldStudent/technicalsupport' element={<TechnicalSupport/>}/>
         <Route path='goldStudent/technicalsupport/requsetTicket' element={<RequestTicket/>}/>
         <Route path='goldStudent/technicalsupport/previousTickets' element={<PreviousTickets/>}/>
