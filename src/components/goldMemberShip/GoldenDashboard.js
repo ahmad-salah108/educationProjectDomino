@@ -89,10 +89,10 @@ export default function GoldenDashboard()
                         <Link to={'/goldStudent/tasksTable'} className='link-title'>جدولي المهام   </Link>
                     </div>
                     <div className='categ-link'>
-                        <Link to={'/student/followupattendance'} className='link-title'>انجازاتي</Link>
+                        <Link to={'/goldStudent/achievements'} className='link-title'>انجازاتي</Link>
                     </div>
                     <div className='categ-link'>
-                        <Link to={'/student/followupattendance'} className='link-title'>لوحة الشرف </Link>
+                        <Link to={'/goldStudent/honoraryboard'} className='link-title'>لوحة الشرف </Link>
                     </div>
                     <div className='categ-link'>
                         <Link to={'/goldStudent/technicalsupport'} className='link-title'>الدعم الفني  </Link>

@@ -70,6 +70,12 @@ import GroupConversation from './pages/goldMemberShip/GroupConversation';
 import NotificationPage from './pages/goldMemberShip/NotificationPage';
 import LandParentPage from './pages/parent/LandParentPage';
 
+import GoldAchievements from './pages/goldMemberShip/GoldAchievements';
+import HonoraryBoard from './pages/goldMemberShip/HonoraryBoard';
+import StudentsHonorRoll from './pages/goldMemberShip/StudentsHonorRoll';
+import TeachersHonorRoll from './pages/goldMemberShip/TeachersHonorRoll';
+
+
 
 function App() {
   useEffect(() => {
@@ -157,6 +163,12 @@ function App() {
         <Route path='goldStudent/tasksTable' element={<GoldTasksTable/>}/>
         <Route path='goldStudent/myForums/:fromType/:froumId' element={<GoldSingleForum/>}/>
         <Route path='goldStudent/notification' element={<NotificationPage/>}/>
+
+        <Route path='goldStudent/achievements' element={<GoldAchievements/>}/>
+        <Route path='goldStudent/honoraryboard' element={<HonoraryBoard/>}/>
+        <Route path='goldStudent/honoraryboard/studentsHonorRoll' element={<StudentsHonorRoll/>}/>
+        <Route path='goldStudent/honoraryboard/teachersHonorRoll' element={<TeachersHonorRoll/>}/>
+
 
         <Route path='parent' element={<LandParentPage/>}/>
       </Routes>
