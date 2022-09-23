@@ -74,6 +74,7 @@ import GoldAchievements from './pages/goldMemberShip/GoldAchievements';
 import HonoraryBoard from './pages/goldMemberShip/HonoraryBoard';
 import StudentsHonorRoll from './pages/goldMemberShip/StudentsHonorRoll';
 import TeachersHonorRoll from './pages/goldMemberShip/TeachersHonorRoll';
+import ChartPage from './pages/parent/ChartPage';
 
 
 
@@ -169,8 +170,8 @@ function App() {
         <Route path='goldStudent/honoraryboard/studentsHonorRoll' element={<StudentsHonorRoll/>}/>
         <Route path='goldStudent/honoraryboard/teachersHonorRoll' element={<TeachersHonorRoll/>}/>
 
-
         <Route path='parent' element={<LandParentPage/>}/>
+        <Route path='parent/chart' element={<ChartPage/>}/>
       </Routes>
     </div>
   );

@@ -1,16 +1,14 @@
 import React from 'react'
 import ParentNavbar from '../../components/parent/ParentNavbar'
-import '../../assest/css/parent/landParentPage.css'
+import '../../assest/css/parent/ChartPage.css'
 import ParenttopBoxes from '../../components/parent/ParentTopBoxes'
 import {
   Chart as ChartJS,CategoryScale,LinearScale,BarElement,Title,Tooltip,Legend} from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import GoldChart from '../../components/goldMemberShip/GoldChart';
 import image1 from '../../images/goldStudent/Group 3605.png'
 import image2 from '../../images/goldStudent/Group 3606.png'
 import image3 from '../../images/goldStudent/Group 3647.png'
 import image4 from '../../images/goldStudent/تهنئة 1.png'
-import {Link} from 'react-router-dom'
 
 ChartJS.register(
     CategoryScale,
@@ -21,7 +19,7 @@ ChartJS.register(
     Legend
 );
 
-export default function LandParentPage() {
+export default function ChartPage() {
   const data = {
     labels:["اللغة العربية ","الاقتصاد ","الرياضيات ","التاريخ ","اللغة العربية ","اللغة العربية ","اللغة العربية ","اللغة العربية ","اللغة العربية ","اللغة العربية "],
     datasets:[
@@ -77,38 +75,31 @@ const optionsPart = {
         <div className='parent-land-content'>
           <ParenttopBoxes/>
         </div>
-        <div className='land-parent container'>
-              <div className='land-parent-header'>
-                  <div className='land-parent-average'>
-                    <h3 className='land-parent-average-degree'>متوسط المعدل: <span>8/10</span></h3>
-                    <h3 className='land-parent-rate'>ممتاز</h3>
+        <div className='chart-single container'>
+              <div className='chart-single-header'>
+                  <div className='chart-single-average'>
+                    <h3 className='chart-single-average-degree'>متوسط المعدل: <span>8/10</span></h3>
+                    <h3 className='chart-single-rate'>ممتاز</h3>
                   </div>
-                  <div className='land-parent-images'>
+                  <div className='chart-single-images'>
                     <img src={image1} alt="load"/>
                     <img src={image2} alt="load"/>
                 </div>
               </div>
-              <div className='land-parent-print'>
+              <div className='chart-single-print'>
                   <button><img src={image3} alt="load"/></button>
               </div>
-              <div className='land-parent-text'>
-                  <div className='land-parent-text-wrapper'>
-                    <h3 className='land-parent-text-title'>اهلا بك في اكاديمتنا  </h3>
-                    <img src={image4} className="land-parent-title-image" alt='load'/>
+              <div className='chart-single-text'>
+                  <div className='chart-single-text-wrapper'>
+                    <h3 className='chart-single-text-title'>مادة اللغة العربية  </h3>
+                    <img src={image4} className="chart-single-title-image" alt='load'/>
                   </div>
-                  <h4 className='land-parent-text-summary'>يسعدنا تسهيل عملية متابعة دراسة ابنائك من خلال اكاديميتنا </h4>
+                  <h4 className='chart-single-text-summary'>هنا الطلع علي علامات ومستوي الطالب باللغة العربية </h4>
               </div>
-              <div className='land-parent-mainchart'>
+              <div className='chart-single-mainchart'>
                   <Bar datasets data={data} options={options} height="218px"/>
               </div>
-              <div className='land-parent-charts'>
-                <Link to={'/parent/chart'} className="land-parent-chart-link"><GoldChart data={dataPart} options={optionsPart}/></Link>
-                <Link to={'/parent/chart'} className="land-parent-chart-link"><GoldChart data={dataPart} options={optionsPart}/></Link>
-                <Link to={'/parent/chart'} className="land-parent-chart-link"><GoldChart data={dataPart} options={optionsPart}/></Link>
-                <Link to={'/parent/chart'} className="land-parent-chart-link"><GoldChart data={dataPart} options={optionsPart}/></Link>
-                <Link to={'/parent/chart'} className="land-parent-chart-link"><GoldChart data={dataPart} options={optionsPart}/></Link>
-                <Link to={'/parent/chart'} className="land-parent-chart-link"><GoldChart data={dataPart} options={optionsPart}/></Link>
-              </div>
+              <h3 className='chart-single-title'>مادة اللغة العربية </h3>
         </div>
     </div>
   )

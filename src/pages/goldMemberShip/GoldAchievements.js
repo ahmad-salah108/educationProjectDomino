@@ -10,7 +10,6 @@ Chart as ChartJS,CategoryScale,LinearScale,BarElement,Title,Tooltip,Legend} from
 import { Bar } from 'react-chartjs-2';
 import GoldChart from '../../components/goldMemberShip/GoldChart';
 
-
 ChartJS.register(
     CategoryScale,
     LinearScale,
