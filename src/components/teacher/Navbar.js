@@ -14,7 +14,7 @@ export default function TeacherNavbar()
                 <div className='nav-left'>
                     <form className='search-box'>
                         <BsSearch className='search-icon'/>
-                        <input className='search-input' placeholder='ابحث'/>
+                        <input type={"search"} className='search-input' placeholder='ابحث'/>
                     </form>
                     <TeacherNavIcons/>
                 </div>

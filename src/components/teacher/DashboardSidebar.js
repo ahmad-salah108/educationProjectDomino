@@ -101,7 +101,7 @@ export default function DashboardSidebar()
                         </div>
                     <div className='categ-link'>
                         <span className='categ-icon'><AiOutlineLaptop className="icon"/></span>
-                        <Link to={'#'} className='link-title'> متابعة الحضور والغياب</Link>
+                        <Link to={'/teacher/attendance'} className='link-title'> متابعة الحضور والغياب</Link>
                     </div>
                     <div className='categ-link'>
                         <span className='categ-icon'><AiOutlineLaptop className="icon"/></span>

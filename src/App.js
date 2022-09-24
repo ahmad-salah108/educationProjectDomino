@@ -75,6 +75,12 @@ import HonoraryBoard from './pages/goldMemberShip/HonoraryBoard';
 import StudentsHonorRoll from './pages/goldMemberShip/StudentsHonorRoll';
 import TeachersHonorRoll from './pages/goldMemberShip/TeachersHonorRoll';
 import ChartPage from './pages/parent/ChartPage';
+import GroupsSearchNotFound from './pages/user/groups/GroupSearchNotFound';
+import GroupsSearchFound from './pages/user/groups/GroupsSearchFound';
+import VideoLessonsSearchFound from './pages/user/videoLessons/VideoLessonsSearchFound';
+import VideoLessonsSearchNotFound from './pages/user/videoLessons/VideoLessonsSearchNotFound';
+import TeacherAttendance from './pages/teacher/TeacherAttendance';
+import SchoolSchedule from './pages/teacher/SchoolSchedule';
 
 
 
@@ -90,6 +96,8 @@ function App() {
         <Route path='/' element={<UserpagesOutlet/>}>
           <Route index element={<Home/>}/>
           <Route path='groups' element={<Groups/>}/>
+          <Route path='groups/search/notFound' element={<GroupsSearchNotFound/>}/>
+          <Route path='groups/search' element={<GroupsSearchFound/>}/>
           <Route path='groups/:groupType' element={<GroupsCategory/>}/>
           <Route path="forums" element={<Forums/>}/>
           <Route path='forums/:forumType' element={<ForumsCategoryPage/>}/>
@@ -103,6 +111,8 @@ function App() {
           <Route path="memberships/silver" element={<SilverMemberShipPage/>}/>
           <Route path="memberships/regular" element={<ReqularMemberShipPage/>}/>
           <Route path='videoLessons' element={<VideoLessons/>}/>
+          <Route path='videoLessons/search' element={<VideoLessonsSearchFound/>}/>
+          <Route path='videoLessons/search/notFound' element={<VideoLessonsSearchNotFound/>}/>
           <Route path='videoLessons/:lessonsType' element={<VideoLessonsCategory/>}/>
           <Route path='videoLessons/watch/url/:lessonType/:lessonId' element={<LessonUrlPage/>}/>
           <Route path='videoLessons/watch/:lessonType/:lessonId' element={<PlayerLessonPage/>}/>
@@ -132,10 +142,13 @@ function App() {
         <Route path="teacher" element={<DashboardMain/>}/>
         <Route path='teacher/financial' element={<FinancialSahrePage/>}/>
         <Route path='teacher/calender' element={<CalenderPage/>}/>
+        <Route path='teacher/schoolschedule' element={<SchoolSchedule/>}/>
+        <Route path='teacher/attendance' element={<TeacherAttendance/>}/>
         {/** student dashboard */}
         <Route path='student' element={<LandStudentDashboardPage/>}/>
         <Route path='student/followupattendance' element={<FollowUpAttendance/>}/>
         <Route path='student/detectionpoints' element={<DetectionPointsStudent/>}/>
+        
         {/** golden  student  dashboard*/}
         <Route path='goldStudent' element={<GoldControlBoard/>}/>
         <Route path='goldStudent/myCourses' element={<MyCourses/>}/>

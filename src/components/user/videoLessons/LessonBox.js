@@ -27,7 +27,7 @@ export default function LessonBox({lesson, type}) {
                 </div>
                 <div className="lesson-view">
                     <div className="lesson-view-wrapper">
-                        <Link to={`/videoLessons/watch/${type}/${lesson.id}`} className="lesson-link"
+                        <Link to={`${type?`/videoLessons/watch/${type}/${lesson.id}`:""}`} className="lesson-link"
                         >مشاهدة</Link>
                     </div>
                     <div className="image">
