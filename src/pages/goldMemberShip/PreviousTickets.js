@@ -5,8 +5,17 @@ import '../../assest/css/goldMemberShip/goldcontrolboard.css'
 import GoldTopMain from '../../components/goldMemberShip/GoldTopMain';
 import image from '../../images/goldStudent/support.png'
 import '../../assest/css/goldMemberShip/previoustickets.css'
+import { useEffect } from 'react';
+
+
 export default function PreviousTickets()
 {
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
     return(
         <div className="dashboard">
             <GoldenNavbar/>

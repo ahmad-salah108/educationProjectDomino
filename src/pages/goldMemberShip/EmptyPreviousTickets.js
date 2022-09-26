@@ -5,8 +5,15 @@ import '../../assest/css/goldMemberShip/goldcontrolboard.css'
 import GoldTopMain from '../../components/goldMemberShip/GoldTopMain';
 import image from '../../images/goldStudent/support.png'
 import '../../assest/css/goldMemberShip/emptyprevioustickets.css'
+import { useEffect } from 'react';
 export default function EmptyPreviousTickets()
 {
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
     return(
         <div>
             <div className="dashboard">

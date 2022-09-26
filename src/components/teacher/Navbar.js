@@ -1,6 +1,7 @@
 import '../../assest/css/teacher/Navbar.css'
 import {BsSearch} from 'react-icons/bs'
 import TeacherNavIcons from './NavIcons'
+import logo from '../../images/logo.png'
 
 export default function TeacherNavbar()
 {
@@ -8,7 +9,7 @@ export default function TeacherNavbar()
         <div className='navbar'>
             <div className='container navbar-wrapper'>
                 <div className='logo'>
-                    <h3 className='logo-image'>لوجو</h3>
+                    <img src={logo} alt="" className='logo-image'/>
                     <h4 className='logo-title'>أكادميتنا </h4>
                 </div>
                 <div className='nav-left'>

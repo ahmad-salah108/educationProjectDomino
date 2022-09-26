@@ -25,15 +25,15 @@ export default function MemberShipsPage()
                     <button className="not-active type-btn">سنوي</button>
                 </div>
                 <div className="content">
-                    <div className="memebrship" onClick={()=>navigate('/memberships/regular')}>
+                    <div className="memebrship">
                         <RegularMembership/>
                         <h3 className="membership-text">العضوية العادية  </h3>
                     </div>
-                    <div className="gold-member memebrship" onClick={()=>navigate('/memberships/golden')}>
+                    <div className="gold-member memebrship">
                         <GoldMembership/>
                         <h3 className="membership-text">العضوية الذهبية </h3>
                     </div>
-                    <div className="silver-member order-2 xl:order-3 memebrship" onClick={()=>navigate('/memberships/silver')}>
+                    <div className="silver-member  memebrship">
                         <SilverMembership/>
                         <h3 className="membership-text">العضوية الفضية  </h3>
                     </div>

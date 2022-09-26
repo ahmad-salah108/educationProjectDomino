@@ -6,10 +6,17 @@ import '../../assest/css/goldMemberShip/myLessons.css'
 import { Link } from 'react-router-dom';
 import img1 from '../../images/منتدي 1.webp'
 import  LessonBox from '../../components/user/videoLessons/LessonBox'
+import { useEffect } from 'react';
 
 export default function MyVideoLessons()
 {
 
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
     const data=[{
         type:'Arabic',
         title:"اللغة العربية",

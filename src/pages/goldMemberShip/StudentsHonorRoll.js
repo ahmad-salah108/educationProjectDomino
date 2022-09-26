@@ -6,9 +6,16 @@ import '../../assest/css/goldMemberShip/honoraryboard.css'
 import image from '../../images/goldStudent/WhatsApp Image 2021-12-24 at 11.24 7.png'
 import HonoraryBoardStudent from '../../components/goldMemberShip/HonoraryBoardStudent';
 import '../../assest/css/goldMemberShip/studentshonorroll.css'
+import { useEffect } from 'react';
 
 export default function StudentsHonorRoll()
 {
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
     return(
         <div className="dashboard">
             <GoldenNavbar/>

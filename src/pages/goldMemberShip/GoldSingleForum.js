@@ -8,8 +8,15 @@ import image from '../../images/goldStudent/781237e7972f2496a46c8ee49d8436d7.png
 import perosnImage from '../../images/goldStudent/person.png'
 import {BiCommentDetail} from 'react-icons/bi'
 import {GrShare} from 'react-icons/gr'
+import { useEffect } from 'react';
 export default function GoldSingleForum()
 {
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
 
     const comments = [
         {

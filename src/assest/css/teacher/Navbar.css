@@ -25,6 +25,11 @@
 }
 }
 
+.navbar .logo-image{
+    width: 60px;
+    height: 45px;
+}
+
 .navbar .logo-title{
     font-size: 28px;
     font-weight: 400;

@@ -1,4 +1,4 @@
-import image from '../../../images/فضية (1) 1.png'
+import image from '../../../images/الذهبية1.png'
 import { Link } from 'react-router-dom'
 import '../../../assest/css/user/memberShips/goldenMemberShip.css'
 export default function GoldMembership()

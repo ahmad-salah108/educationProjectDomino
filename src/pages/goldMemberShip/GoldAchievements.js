@@ -2,6 +2,7 @@ import '../../assest/css/student/dashBoardStudent.css'
 import GoldenNavbar from '../../components/goldMemberShip/GoldenNavbar';
 import GoldenDashboard from '../../components/goldMemberShip/GoldenDashboard';
 import GoldTopMain from '../../components/goldMemberShip/GoldTopMain';
+import { useEffect } from 'react';
 import '../../assest/css/goldMemberShip/goldAchievements.css'
 import image1 from '../../images/goldStudent/Group 3605.png'
 import image2 from '../../images/goldStudent/Group 3606.png'
@@ -21,6 +22,12 @@ ChartJS.register(
 
 export default function GoldAchievements()
 {
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
     const data = {
         labels:["اللغة العربية ","الاقتصاد ","الرياضيات ","التاريخ ","اللغة العربية ","اللغة العربية ","اللغة العربية ","اللغة العربية ","اللغة العربية ","اللغة العربية "],
         datasets:[

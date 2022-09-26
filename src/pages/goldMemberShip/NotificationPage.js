@@ -4,11 +4,17 @@ import GoldenDashboard from '../../components/goldMemberShip/GoldenDashboard';
 import GoldTopMain from '../../components/goldMemberShip/GoldTopMain';
 import '../../assest/css/goldMemberShip/myNotification.css'
 import Notification from '../../components/goldMemberShip/Notification';
+import { useEffect } from 'react';
 
 export default function NotificationPage()
 {
 
-
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
 
     return(
         <div className="dashboard">

@@ -5,10 +5,17 @@ import GoldTopMain from '../../components/goldMemberShip/GoldTopMain';
 import '../../assest/css/goldMemberShip/mySingleExam.css'
 import { Link } from 'react-router-dom';
 import img1 from '../../images/group1.webp'
+import { useEffect } from 'react';
 
 
 export default function MySingleExam()
 {
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
     return(
         <div className="dashboard">
             <GoldenNavbar/>

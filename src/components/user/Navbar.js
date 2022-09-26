@@ -3,6 +3,7 @@ import { Link} from 'react-router-dom'
 import {HiOutlineSearch} from 'react-icons/hi'
 import {AiOutlineMenu , AiOutlineClose} from 'react-icons/ai'
 import '../../assest/css/user/Navbar.css'
+import logo from '../../images/logo.png'
 
 export default function Navbar() {
   const [showNav,setshowNav]=useState(false);
@@ -26,7 +27,7 @@ return (
         <div className='nav-container container'>
         <nav className='nav-wrapper'>
             <div className='nav-logo '>
-                <h2 className='heading-two '>لوجو</h2>
+                <img src={logo} alt="logo" className='logo-nav'/>
                 <h3 className='heading-three'>أكادميتنا</h3>
             </div>
               <button className='toggle-show' onClick={()=>setshowNav(p=>!p)}>

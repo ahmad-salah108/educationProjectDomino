@@ -6,10 +6,16 @@ import '../../assest/css/goldMemberShip/oneConversation.css'
 import OneMessenger from '../../components/goldMemberShip/OneMessenger';
 import {BiSearchAlt2} from 'react-icons/bi'
 import FriendBox from '../../components/goldMemberShip/FriendBox';
-
+import { useEffect } from 'react';
 
 export default function OneConversation()
 {
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
 
     return(
         <div className="dashboard">

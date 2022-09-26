@@ -6,8 +6,17 @@ import '../../assest/css/goldMemberShip/goldcontrolboard.css'
 import GoldTopMain from '../../components/goldMemberShip/GoldTopMain';
 import image from '../../images/goldStudent/support.png'
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+
+
 export default function TechnicalSupport()
 {
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
     return(
         <div className="dashboard">
             <GoldenNavbar/>

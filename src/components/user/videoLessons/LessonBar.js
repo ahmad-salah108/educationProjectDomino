@@ -8,8 +8,7 @@ export default function LessonsBar() {
      <div className="lessons-bar">
     <h3 className="title-lessons">الفصل الدراسي </h3>
     <ul className="bar-wrapper">
-        <Link to={'/videoLessons/'}className={`link
-        ${window.location.pathname==="/groups"&&"acive-line"}`}
+        <Link to={'/videoLessons/'}className={`link`}
             >الفصل الاول 
         </Link>
         <Link to={'/videoLessons/'}  className="link"
@@ -23,26 +22,25 @@ export default function LessonsBar() {
     <div className="lessons-bar">
     <h3 className="title-lessons">الفئات</h3>
     <ul className="bar-wrapper">
-        <Link to={'/videoLessons/'}className={`link 
-        ${window.location.pathname==="/videoLessons"&&"active-line"}`}
+        <Link to={'/videoLessons'}className={`link  ${window.location.pathname==="/videoLessons"&&"active"}`}
             >الجميع
         </Link>
-        <Link to={'/videoLessons/arabic'}  className="link"
+        <Link to={'/videoLessons/arabic'}  className={`link  ${window.location.pathname==="/videoLessons/arabic"&&"active"}`}
             >اللغة العربية
         </Link>
-        <Link to={'/videoLessons/math'}  className="link"
+        <Link to={'/videoLessons/math'}  className={`link  ${window.location.pathname==="/videoLessons/math"&&"active"}`}
             >الرياضيات
         </Link>
-        <Link to={'/videoLessons/history'}  className="link"
+        <Link to={'/videoLessons/history'}  className={`link  ${window.location.pathname==="/videoLessons/history"&&"active"}`}
             >التاريخ
         </Link>
-        <Link to={'/videoLessons/economie'}  className="link"
+        <Link to={'/videoLessons/economie'}  className={`link  ${window.location.pathname==="/videoLessons/economie"&&"active"}`}
             >الإقتصاد
         </Link>
-        <Link to={'/videoLessons/etiquette'}  className="link"
+        <Link to={'/videoLessons/etiquette'}  className={`link  ${window.location.pathname==="/videoLessons/etiquette"&&"active"}`}
             >الاداب
         </Link>
-        <Link to={'/videoLessons/languages'} className="link"
+        <Link to={'/videoLessons/languages'} className={`link  ${window.location.pathname==="/videoLessons/languages"&&"active"}`}
             >اللغات الأجنبية
         </Link>
     </ul>

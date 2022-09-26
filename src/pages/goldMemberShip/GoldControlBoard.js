@@ -11,9 +11,16 @@ import image2 from '../../images/goldStudent/2.png'
 import image3 from '../../images/goldStudent/3.png'
 import image4 from '../../images/goldStudent/4.png'
 import {Link} from 'react-router-dom'
+import { useEffect } from 'react';
 
 export default function GoldControlBoard()
 {
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
     const [date, setDate] = useState(new Date());
     const info = [
         {
@@ -56,27 +63,27 @@ export default function GoldControlBoard()
                             <div className='dash-control-board-servesis'>
                                 <div className='dash-control-board-servesis-box'>
                                     <img className='dash-control-board-box-image' src={image4} alt="load"/>
-                                    <Link to={"#"} className='dash-control-board-box-title'>الدورات التدريبية </Link>
+                                    <Link to={"/goldStudent/myCourses"} className='dash-control-board-box-title'>الدورات التدريبية </Link>
                                 </div>
                                 <div className='dash-control-board-servesis-box'>
                                     <img className='dash-control-board-box-image' src={image3} alt="load"/>
-                                    <Link to={'#'} className='dash-control-board-box-title'> الدروس المرئية  </Link>
+                                    <Link to={'/goldStudent/myVideoLessons'} className='dash-control-board-box-title'> الدروس المرئية  </Link>
                                 </div>
                                 <div className='dash-control-board-servesis-box'>
                                     <img className='dash-control-board-box-image' src={image1} alt="load"/>
-                                    <Link to={'#'} className='dash-control-board-box-title'> المجموعات  </Link>
+                                    <Link to={'/goldStudent/myGroups'} className='dash-control-board-box-title'> المجموعات  </Link>
                                 </div>
                                 <div className='dash-control-board-servesis-box'>
                                     <img className='dash-control-board-box-image' src={image2} alt="load"/>
-                                    <Link to={'#'} className='dash-control-board-box-title'> الاخصائي النفسي  </Link>
+                                    <Link to={'/goldStudent/mySessions'} className='dash-control-board-box-title'> الاخصائي النفسي  </Link>
                                 </div>
                                 <div className='dash-control-board-servesis-box'>
                                     <img className='dash-control-board-box-image' src={image1} alt="load"/>
-                                    <Link to={'#'} className='dash-control-board-box-title'> المجموعات  </Link>
+                                    <Link to={'/goldStudent/myGroups'} className='dash-control-board-box-title'> المجموعات  </Link>
                                 </div>
                                 <div className='dash-control-board-servesis-box'>
                                     <img className='dash-control-board-box-image' src={image2} alt="load"/>
-                                    <Link to={'#'} className='dash-control-board-box-title'>الاخصائي النفسي   </Link>
+                                    <Link to={'/goldStudent/mySessions'} className='dash-control-board-box-title'>الاخصائي النفسي   </Link>
                                 </div>
                             </div>
                             <div className='calender-wrapper'>

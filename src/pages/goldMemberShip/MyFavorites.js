@@ -11,9 +11,17 @@ import LessonBox from '../../components/user/videoLessons/LessonBox';
 import SessionBox from '../../components/user/psychologist/SessionBox';
 import Group from '../../components/user/groups/Group';
 import Forum from '../../components/user/forums/Forum';
+import { useEffect } from 'react';
+
 
 export default function MyFavorites()
 {
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
 
     const videoLessons=[{
         type:'Arabic',

@@ -1,4 +1,4 @@
-import React from 'react'
+import {useEffect}  from 'react'
 import ParentNavbar from '../../components/parent/ParentNavbar'
 import '../../assest/css/parent/ChartPage.css'
 import ParenttopBoxes from '../../components/parent/ParentTopBoxes'
@@ -20,6 +20,14 @@ ChartJS.register(
 );
 
 export default function ChartPage() {
+  
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[])
+
   const data = {
     labels:["اللغة العربية ","الاقتصاد ","الرياضيات ","التاريخ ","اللغة العربية ","اللغة العربية ","اللغة العربية ","اللغة العربية ","اللغة العربية ","اللغة العربية "],
     datasets:[

@@ -6,11 +6,16 @@ import '../../assest/css/goldMemberShip/groupConversation.css'
 import {BiSearchAlt2} from 'react-icons/bi'
 import FriendBox from '../../components/goldMemberShip/FriendBox';
 import GroupMessenger from '../../components/goldMemberShip/GroupMessenger';
-
+import { useEffect } from 'react';
 
 export default function GroupConversation()
 {
-
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
     return(
         <div className="dashboard">
             <GoldenNavbar/>

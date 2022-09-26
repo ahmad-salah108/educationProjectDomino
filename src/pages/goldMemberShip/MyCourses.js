@@ -6,9 +6,16 @@ import '../../assest/css/goldMemberShip/myCourses.css'
 import { Link } from 'react-router-dom';
 import img1 from '../../images/منتدي 1.webp'
 import Course from '../../components/user/courses/Course';
+import { useEffect } from 'react';
 
 export default function MyCourses()
 {
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
 
     const data=[{
         type:'Arabic',

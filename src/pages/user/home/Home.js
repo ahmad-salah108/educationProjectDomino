@@ -8,9 +8,17 @@ import Students from '../../../components/user/home/Students'
 import OurTeam from '../../../components/user/home/OurTeam'
 import About from '../../../components/user/home/About'
 import Academy from '../../../components/user/home/Academy'
+import { useEffect } from "react";
 
 export default function Home()
 {
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:"0"
+        })
+    },[]);
+
     return(
         <div>
             <LandHomePage/>

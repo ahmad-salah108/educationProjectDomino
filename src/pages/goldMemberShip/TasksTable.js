@@ -6,9 +6,17 @@ import GoldTopMain from '../../components/goldMemberShip/GoldTopMain';
 import CalenderBox from '../../components/teacher/CalenderBox';
 import Calendar from 'react-calendar';
 import '../../assest/css/goldMemberShip/goldtaskstable.css'
-import { useState } from 'react';
+import { useState , useEffect} from 'react';
+
+
 export default function GoldTasksTable()
 {
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
     const [date, setDate] = useState(new Date());
     const info = [
         {

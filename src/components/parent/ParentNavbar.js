@@ -3,6 +3,7 @@ import {HiOutlineSearch} from 'react-icons/hi'
 import {AiOutlineMenu , AiOutlineClose} from 'react-icons/ai'
 import {MdSettings} from 'react-icons/md'
 import '../../assest/css/parent/parentNavbar.css'
+import logo from '../../images/logo.png'
 
 export default function ParentNavbar() {
   const [showNav,setshowNav]=useState(false);
@@ -26,7 +27,7 @@ return (
         <div className='nav-container container'>
         <nav className='nav-wrapper'>
             <div className='nav-logo '>
-                <h2 className='heading-two '>لوجو</h2>
+                <img src={logo} alt="logo" className='logo-nav'/>
                 <h3 className='heading-three'>أكادميتنا</h3>
             </div>
               <button className='toggle-show' onClick={()=>setshowNav(p=>!p)}>

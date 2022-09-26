@@ -4,6 +4,7 @@ import {HiOutlineSearch} from 'react-icons/hi'
 import {AiOutlineMenu , AiOutlineClose} from 'react-icons/ai'
 import '../../assest/css/goldMemberShip/GoldenNavbar.css'
 import GoldenNavIcons from './GoldenNavIcons'
+import logo from '../../images/logo.png'
 
 export default function GoldenNavbar() {
   const [showNav,setshowNav]=useState(false);
@@ -27,7 +28,7 @@ return (
         <div className='nav-container container'>
         <nav className='nav-wrapper'>
             <div className='nav-logo '>
-                <h2 className='heading-two '>لوجو</h2>
+                <img src={logo} alt="logo" className='logo-nav'/>
                 <h3 className='heading-three'>أكادميتنا</h3>
             </div>
               <button className='toggle-show' onClick={()=>setshowNav(p=>!p)}>
@@ -35,11 +36,11 @@ return (
               </button>
             <div className={`links-wrapper ${showNav?"show":"notShow"}`} ref={ref}>
                 <div className='pages-links-wrapper'>
-                <Link to='' className={"page-link"}>المجموعات </Link>
-                <Link to={"/courses"} className={"page-link"}>الدورات</Link>
-                <Link to={"/memberships"} className={"page-link"}>الدروس المرئية </Link>
-                <Link to={"/d"} className={"page-link"}>الاختبارات </Link>
-                <Link to={"/d"} className={"page-link"}>النوادي والمنتديات </Link>
+                <Link to='/goldStudent/myGroups' className={"page-link"}>المجموعات </Link>
+                <Link to={"/goldStudent/myCourses"} className={"page-link"}>الدورات</Link>
+                <Link to={"/goldStudent/myVideoLessons"} className={"page-link"}>الدروس المرئية </Link>
+                <Link to={"/goldStudent/myExams"} className={"page-link"}>الاختبارات </Link>
+                <Link to={"/goldStudent/myForums"} className={"page-link"}>النوادي والمنتديات </Link>
                 </div>
                 <form className='search-form-second'>
                   <button className='search-icon'>

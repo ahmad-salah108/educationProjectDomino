@@ -4,8 +4,15 @@ import GoldenNavbar from '../../components/goldMemberShip/GoldenNavbar'
 import { Link } from 'react-router-dom'
 import {AiOutlineCamera} from 'react-icons/ai'
 import profile from '../../images/istockphoto.jpg'
+import { useEffect } from 'react'
 
 export default function AccountSetting() {
+  useEffect(()=>{
+    window.scrollTo({
+        behavior:"smooth",
+        top:0
+    })
+},[]);
   return (
     <div className='account-setting'>
         <GoldenNavbar/>

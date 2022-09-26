@@ -2,9 +2,15 @@ import React from 'react'
 import '../../assest/css/goldMemberShip/passwordSetting.css'
 import GoldenNavbar from '../../components/goldMemberShip/GoldenNavbar'
 import { Link } from 'react-router-dom'
-
+import { useEffect } from 'react'
 
 export default function PasswordSetting() {
+  useEffect(()=>{
+    window.scrollTo({
+        behavior:"smooth",
+        top:0
+    })
+},[]);
   return (
     <div className='password-setting'>
         <GoldenNavbar/>

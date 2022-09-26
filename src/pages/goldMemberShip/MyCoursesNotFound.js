@@ -5,11 +5,16 @@ import GoldTopMain from '../../components/goldMemberShip/GoldTopMain';
 import '../../assest/css/goldMemberShip/notFound.css'
 import { Link } from 'react-router-dom';
 import notFoundImage from '../../images/لا يوجد 1.webp'
-
+import { useEffect } from 'react';
 
 export default function MyCoursesNotFound()
 {
-
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
     return(
         <div className="dashboard">
             <GoldenNavbar/>

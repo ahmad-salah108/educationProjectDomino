@@ -31,8 +31,9 @@
     font-size: 400;
     letter-spacing: -0.015em;
 }
-.parent-navBar .nav-logo .heading-two{
-    color: #0E6275;
+.parent-navBar .nav-logo .logo-nav{
+    width: 60px;
+    height: 45px;
 }
 .parent-navBar .nav-logo .heading-three{
     color: #242424;

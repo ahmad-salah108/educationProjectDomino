@@ -6,9 +6,17 @@ import '../../assest/css/goldMemberShip/myGroups.css'
 import { Link } from 'react-router-dom';
 import img1 from '../../images/group1.webp'
 import Group from '../../components/user/groups/Group';
+import { useEffect } from 'react';
+
 
 export default function MyGroups()
 {
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
 
     const data=[{
         type:'Arabic',

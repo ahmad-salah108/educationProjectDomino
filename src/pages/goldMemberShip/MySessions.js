@@ -6,9 +6,17 @@ import '../../assest/css/goldMemberShip/mySessions.css'
 import { Link } from 'react-router-dom';
 import img1 from '../../images/psyoSession.webp'
 import SessionBox from '../../components/user/psychologist/SessionBox';
+import { useEffect } from 'react';
+
 
 export default function MySessions()
 {
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
 
     const localData=[
         {

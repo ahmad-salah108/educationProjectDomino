@@ -19,6 +19,7 @@
 }
 .nav-logo{
     display: flex;
+    align-items: center;
     gap: 0px 16px;
     flex-grow: 1;
 }
@@ -33,8 +34,9 @@
     font-size: 400;
     letter-spacing: -0.015em;
 }
-.nav-logo .heading-two{
-    color: #0E6275;
+.nav-logo .logo-nav{
+    width: 60px;
+    height: 45px;
 }
 .nav-logo .heading-three{
     color: #242424;

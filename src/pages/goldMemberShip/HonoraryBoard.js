@@ -7,8 +7,15 @@ import image from '../../images/goldStudent/WhatsApp Image 2021-12-24 at 11.24 7
 import {Link} from 'react-router-dom'
 import HonoraryBoardTeacher from '../../components/goldMemberShip/HonoraryBoardTeacher';
 import HonoraryBoardStudent from '../../components/goldMemberShip/HonoraryBoardStudent';
+import { useEffect } from 'react';
 export default function HonoraryBoard()
 {
+    useEffect(()=>{
+        window.scrollTo({
+            behavior:"smooth",
+            top:0
+        })
+    },[]);
 return(
     <div className="dashboard">
         <GoldenNavbar/>
