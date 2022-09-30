@@ -1,5 +1,5 @@
 import {useState , useRef , useEffect} from 'react'
-import { Link} from 'react-router-dom'
+import { Link, NavLink} from 'react-router-dom'
 import {HiOutlineSearch} from 'react-icons/hi'
 import {AiOutlineMenu , AiOutlineClose} from 'react-icons/ai'
 import '../../assest/css/user/Navbar.css'
@@ -23,6 +23,7 @@ export default function Navbar() {
         };
     }, []);
 return (
+  <>
     <nav className='navBar'>
         <div className='nav-container container'>
         <nav className='nav-wrapper'>
@@ -35,10 +36,10 @@ return (
               </button>
             <div className={`links-wrapper ${showNav?"show":"notShow"}`} ref={ref}>
                 <div className='pages-links-wrapper'>
-                  <Link to='' className={"page-link active"}>الرئيسية</Link>
-                  <Link to={"/courses"} className={"page-link"}>الدورات</Link>
-                  <Link to={"/memberships"} className={"page-link"}>الاشتراكات</Link>
-                  <Link to={"/d"} className={"page-link"}>اتصل بنا</Link>
+                  <NavLink end to={'/'} className={({isActive}) => isActive ? 'page-link active' : 'page-link'}>الرئيسية</NavLink>
+                  <NavLink to={"/courses"} className={({isActive}) => isActive ? 'page-link active' : 'page-link'}>الدورات</NavLink>
+                  <NavLink to={"/memberships"} className={({isActive}) => isActive ? 'page-link active' : 'page-link'}>الاشتراكات</NavLink>
+                  <NavLink to={"/d"} className={({isActive}) => isActive ? 'page-link active' : 'page-link'}>اتصل بنا</NavLink>
                 </div>
                 <form className='search-form-second'>
                   <button className='search-icon'>
@@ -69,5 +70,7 @@ return (
         </nav>
         </div>
     </nav>
+    <div className='page-overlay'></div>
+  </>
   )
 }

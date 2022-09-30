@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-import AOS from 'aos'
 import {Route, Routes} from 'react-router-dom'
 import UserpagesOutlet from './pages/user/UserpagesOutlet';
 import Home from './pages/user/home/Home';
@@ -85,11 +83,6 @@ import SchoolSchedule from './pages/teacher/SchoolSchedule';
 
 
 function App() {
-  useEffect(() => {
-    AOS.init({
-      duration : 600
-    });
-  }, []);
   return (
     <div className="App">
       <Routes>

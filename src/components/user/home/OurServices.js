@@ -1,10 +1,7 @@
-import {useEffect} from 'react'
 import m1 from '../../../images/exam.webp'
 import m2 from '../../../images/groups.webp'
 import m3 from '../../../images/fsio.webp'
 import m4 from '../../../images/lect.webp'
-import AOS from 'aos' 
-import 'aos/dist/aos.css';
 import {Link} from 'react-router-dom'
 import '../../../assest/css/user/home/ourServises.css'
 
@@ -62,13 +59,13 @@ return (
             {
                 data.map(da=>{
                     return(
-                        <div className='box' key={da.id} data-aos="zoom-in">
-                            <Link to={'/'+da.link} className="lessons-link">عرض الدروس</Link>
+                        <div className='box' key={da.id}>
                             <div className='text'>
                                 <div className='image'>
                                     <img src={da.image} alt=""/>
                                 </div>
                                 <h3 className='box-title'>{da.title}</h3>
+                                <Link to={'/'+da.link} className="lessons-link">عرض الدروس</Link>
                             </div>
                             <p className='box-descirption'>{da.text}</p>
                         </div>

@@ -41,12 +41,15 @@
   }
   
   .services .lessons-link{
-    text-align: left;
     display: block;
-    padding-left: 100px;
-    padding-left: 100px;
-    margin-bottom: 0.75rem;
-    color: #18A0FB;
+    text-align: center;
+    margin: 0;
+    padding: 5px 10px;
+    margin-right: auto;
+    margin-left: 10%;
+    background-color: #18A0FB;
+    color: #fff;
+    border-radius: 5px;
   }
   
   .services .text{
