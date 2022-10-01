@@ -1,5 +1,4 @@
 import {useEffect} from 'react'
-import '../../assest/css/auth/student-login.css'
 import { Link } from 'react-router-dom'
 import google from '../../images/Group.png'
 import facebook from '../../images/فيس  2.png'

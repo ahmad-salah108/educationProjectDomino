@@ -1,5 +1,4 @@
 import {useEffect} from 'react'
-import '../../assest/css/auth/studentRegister.css'
 import { Link } from 'react-router-dom'
 import google from '../../images/Group.png'
 import facebook from '../../images/فيس  2.png'
@@ -94,8 +93,8 @@ export default function StudentRegister() {
                   </select>
                 </div>
                 <div className='policy-wrapper'>
-                  <input type={"radio"} className="input-radio"/>
-                  <label className='policy-label'>بالضغط على التسجيل أنا أوافق على شروط الخدمة و سياسة الخصوصية  </label>
+                  <input type={"checkbox"} className="input-radio" id='student-policy'/>
+                  <label className='policy-label' for="student-policy">بالضغط على التسجيل أنا أوافق على شروط الخدمة و سياسة الخصوصية  </label>
                 </div>
                 <button className='register-btn'>سجل الان </button>
               </form>

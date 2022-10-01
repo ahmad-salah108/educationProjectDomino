@@ -73,8 +73,8 @@ export default function TeacherRegister() {
                   </div>
                 </div>
                 <div className='policy-wrapper'>
-                  <input type={"radio"} className="input-radio"/>
-                  <label className='policy-label'>بالضغط على التسجيل أنا أوافق على شروط الخدمة و سياسة الخصوصية  </label>
+                  <input type={"checkbox"} className="input-radio" id='policy-input'/>
+                  <label for='policy-input' className='policy-label'>بالضغط على التسجيل أنا أوافق على شروط الخدمة و سياسة الخصوصية  </label>
                 </div>
                 <button className='register-btn'>سجل الان </button>
               </form>

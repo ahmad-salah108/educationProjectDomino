@@ -1,39 +1,20 @@
-.teacher-register{
+.teacher-register, .student-register{
     margin-top: 80px;
     padding-top: 50px;
     min-height: 100vh;
     background-color: #F8F9FD;
 }
-.teacher-register .register-top .heading , .teacher-register .register-top .hasaccount{
+.teacher-register .register-top .heading , .teacher-register .register-top .hasaccount, .student-register .register-top .heading , .student-register .register-top .hasaccount{
     font-weight: bold;
     font-size: 22px;
     color: #000000;
     text-align: center;
     letter-spacing: -0.015em;
 }
-@media (min-width:640px)
-{
-    .teacher-register .register-top .heading , .teacher-register .register-top .hasaccount{
-      font-size: 24px;
-  }
-}
-@media (min-width:768px)
-{
-    .teacher-register .register-top .heading , .teacher-register .register-top .hasaccount{
-      font-size: 26px;
-  }
-}
-/* meduim */ 
-@media (min-width:1024px)
-{
-    .teacher-register .register-top .heading , .teacher-register .register-top .hasaccount{
-    font-size: 30px;
-  }
-}
-.teacher-register .register-top .hasaccount .link{
+.teacher-register .register-top .hasaccount .link, .student-register .register-top .hasaccount .link{
     color: #18A0FB;
 }
- .teacher-register .register-as{
+ .teacher-register .register-as,  .student-register .register-as{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -41,7 +22,7 @@
     margin-top: 50px;
     gap: 16px;
 }
-.teacher-register .register-as .notActive, .register-as .active{
+.teacher-register .register-as .notActive, .register-as .active, .student-register .register-as .notActive, .register-as .active{
     width: 160px;
     height: 45px;
     display: flex;
@@ -51,52 +32,27 @@
     border-radius: 8px;
     font-size: 20px;
     font-weight: bold;
-    letter-spacing: -1.5%;
     color: #000000;
 }
-.teacher-register .register-as .notActive{
+.teacher-register .register-as .notActive, .student-register .register-as .notActive{
     background-color: #FFFFFF;
 }
-.teacher-register .register-as .active{
+.teacher-register .register-as .active, .student-register .register-as .active{
     color:#FFFFFF;
     background-color: #18A0FB;
 }
-@media (min-width:640px)
-{
-    .teacher-register .register-as .notActive, .register-as .active{
-        width: 160px;
-        height: 50px;
-        font-size: 22px;
-  }
-}
-@media (min-width:768px)
-{
-    .teacher-register .register-as .notActive, .register-as .active{
-        width: 160px;
-        height: 50px;
-        font-size: 22px;
-  }
-}
-/* meduim */ 
-@media (min-width:1024px)
-{
-    .teacher-register .register-as .notActive, .register-as .active{
-    width: 200px;
-    height: 65px;
-    font-size: 28px;
-  }
-}
-.teacher-register .register-process-wrapper{
+.teacher-register .register-process-wrapper, .student-register .register-process-wrapper{
     max-width: 940px;
-    margin: 80px auto 0;
+    margin: 40px auto 0;
 }
-.teacher-register .register-through{
+.teacher-register .register-through, .student-register .register-through{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 15px;
 }
-.teacher-register .register-through .register-way-box{
+.teacher-register .register-through .register-way-box, .student-register .register-through .register-way-box{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,108 +62,48 @@
     background: #FFFFFF;
     border-radius: 8px;
 }
-.teacher-register .register-through .image-way{
+.teacher-register .register-through .image-way, .student-register .register-through .image-way{
     width: 28px;
     height: 28px;
 }
-.teacher-register .register-through .name-way{
+.teacher-register .register-through .name-way, .student-register .register-through .name-way{
     color: #989090;
     font-size: 16px;
     font-weight: 500;
 }
-.teacher-register .register-through .or{
+.teacher-register .register-through .or, .student-register .register-through .or{
     font-weight: bold;
     color: #000000;
     font-size: 24px;
 }
-@media (min-width:640px)
-{
-    .teacher-register .register-through .register-way-box{
-        width: 200px;
-        height: 58px;
-    }
-    .teacher-register .register-through .image-way{
-        width: 32px;
-        height: 32px;
-    }
-    .teacher-register .register-through .name-way{
-        font-size: 18px;
-    }
-    .teacher-register .register-through .or{
-        font-size: 26px;
-    }
-}
-@media (min-width:768px)
-{
-    .teacher-register .register-through .register-way-box{
-        width: 210px;
-        height: 60px;
-    }
-    .teacher-register .register-through .image-way{
-        width: 35px;
-        height: 35px;
-    }
-    .teacher-register .register-through .name-way{
-        font-size: 20px;
-    }
-    .teacher-register .register-through .or{
-        font-size: 30px;
-    }
-}
-/* meduim */ 
-@media (min-width:1024px)
-{
-    .teacher-register .register-through .register-way-box{
-        width: 245px;
-        height: 70px;
-    }
-    .teacher-register .register-through .image-way{
-        width: 40px;
-        height: 40px;
-    }
-    .teacher-register .register-through .name-way{
-        font-size: 22px;
-    }
-    .teacher-register .register-through .or{
-        font-size: 35px;
-    }
-}
 
-
-.teacher-register .register-form{
-    margin-top: 50px;
+.teacher-register .register-form, .student-register .register-form{
+    margin-top: 35px;
     padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
-.teacher-register .register-form .form-input-wrapper{
-    margin: 16px 0;
+@media (min-width: 620px){
+    .teacher-register .register-form, .student-register .register-form{
+        align-items: center;
+    }
 }
-.teacher-register .register-form .form-input-wrapper .input-title{
+.teacher-register .register-form .form-input-wrapper, .student-register .register-form .form-input-wrapper{
+    margin-bottom: 16px;
+}
+.teacher-register .register-form .form-input-wrapper .input-title, .student-register .register-form .form-input-wrapper .input-title{
     display: block;
     font-weight: 700;
-    font-size: 22px;
-    line-height: 34px;
+    font-size: 17px;
     color: #000000;
     margin-bottom: 12px;
 }
-@media (min-width:768px)
-{
-    .teacher-register .register-form .form-input-wrapper .input-title{
-        font-size: 24px;
-  }
-}
-/* meduim */ 
-@media (min-width:1024px)
-{
-    .teacher-register .register-form .form-input-wrapper .input-title{
-        font-size: 28px;
-  }
-}
 
-
-.teacher-register .register-form .form-input-wrapper .input{
+.teacher-register .register-form .form-input-wrapper .input, .student-register .register-form .form-input-wrapper .input{
     display: block;
-    width: 600px;
-    height: 50px;
+    width: 480px;
+    height: 40px;
     max-width: 100%;
     background: #FFFFFF;
     border-radius: 8px;
@@ -215,22 +111,22 @@
     border: none;
     padding: 4px 12px;
     letter-spacing: -0.015em;
-    color: #989090;
-    font-size: 18px;
+    color: #333;
+    font-size: 17px;
 }
-.teacher-register .register-form .form-input-wrapper .input:focus{
+.teacher-register .register-form .form-input-wrapper .input:focus, .student-register .register-form .form-input-wrapper .input:focus{
     border: 1px solid #18A0FB;
 }
-.teacher-register .register-form .form-input-wrapper .input.select{
+.teacher-register .register-form .form-input-wrapper .input.select, .student-register .register-form .form-input-wrapper .input.select{
     padding: 4px 16px;
     color: #000000;
 }
 
-.teacher-register .register-form .form-input-wrapper  .input.select .descripe-select{
+.teacher-register .register-form .form-input-wrapper  .input.select .descripe-select, .student-register .register-form .form-input-wrapper  .input.select .descripe-select{
     background-color: #989090;
     color: #FFFFFF;
 }
-.teacher-register .register-form .form-input-wrapper  .input.select .descripe-select .option{
+.teacher-register .register-form .form-input-wrapper  .input.select .descripe-select .option, .student-register .register-form .form-input-wrapper  .input.select .descripe-select .option{
     background-color: #FFFFFF;
     color: #000000;
 }
@@ -241,8 +137,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 600px;
-    height: 50px;
+    width: 480px;
+    height: 40px;
     max-width: 100%;
     background: #FFFFFF;
     border-radius: 8px;
@@ -251,52 +147,36 @@
     padding: 4px 12px;
     letter-spacing: -0.015em;
     color: #242424;
-    font-size: 18px;
+    font-size: 17px;
 }
-.teacher-register .register-form .policy-wrapper{
-    margin-top: 50px;
+.teacher-register .register-form .policy-wrapper, .student-register .register-form .policy-wrapper{
+    margin-top: 40px;
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.teacher-register .register-form .policy-wrapper .input-radio{
-    width: 20px;
-    height: 20px;
+.teacher-register .register-form .policy-wrapper .input-radio, .student-register .register-form .policy-wrapper .input-radio{
+    width: 16px;
+    height: 16px;
 }
-.teacher-register .register-form .policy-wrapper .policy-label{
+.teacher-register .register-form .policy-wrapper .policy-label, .student-register .register-form .policy-wrapper .policy-label{
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
     text-align: right;
     color: #000000;
 }
 
-@media (min-width:768px)
-{
-    .teacher-register .register-form .policy-wrapper .policy-label{
-        font-size: 18px;
-  }
-}
-/* meduim */ 
-@media (min-width:1024px)
-{
-    .teacher-register .register-form .policy-wrapper .policy-label{
-        font-size: 20px;
-  }
-}
-
-
-.teacher-register .register-btn{
+.teacher-register .register-btn, .student-register .register-btn{
     background-color: #18A0FB;
     color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 600px;
-    height: 50px;
+    width: 480px;
+    height: 45px;
     max-width: 100%;
     border-radius: 18px;
-    font-size: 28px;
+    font-size: 22px;
     font: bold;
     margin: 40px auto 10px;
 }

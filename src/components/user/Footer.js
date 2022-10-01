@@ -1,4 +1,3 @@
-import {BsWhatsapp,BsInstagram,BsFacebook,BsYoutube} from 'react-icons/bs'
 import './../../assest/css/user/footer.css'
 import whatsapp from './../../images/icons/whatsapp.svg'
 import facebook from './../../images/icons/facebook.svg'

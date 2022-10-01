@@ -3,7 +3,6 @@ import '../../assest/css/auth/techerLogin.css'
 import { Link } from 'react-router-dom'
 import google from '../../images/Group.png'
 import facebook from '../../images/فيس  2.png'
-import {IoIosAttach} from 'react-icons/io'
 
 export default function TeacherLogin() {
 
