@@ -7,7 +7,7 @@ export default function Courses()
             <div className=" image-parent" data-aos="zoom-in-left">
                 <img alt='load..' src={image} className="image"/>
             </div>
-            <div className="text-wrapper" data-aos="zoom-in-right">
+            <div className="text-wrapper">
                 <h3 className="heading-3">نظام الكورسات </h3>
                 <p className="description text-[16px] lg:text-[18px] font-[400] opacity-80">شرح عن العضويات تبين فيها مزايه كل عضوية شرح عن العضويات تبين فيها مزايه كل عضوية شرح عن العضويات تبين فيها مزايه كل عضوية شرح عن العضويات تبين فيها مزايه كل عضوية شرح عن العضويات تبين فيها مزايه كل عضوية ..............</p>
             </div>

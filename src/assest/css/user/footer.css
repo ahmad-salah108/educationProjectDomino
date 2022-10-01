@@ -2,8 +2,8 @@
     background-color: #387482;
   }
   .footer .footer-container{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .footer .footer-wraper{
     display: flex;
@@ -34,18 +34,14 @@
   
   .footer .content .title{
     color: white;
-    font-size: 26px;
+    font-size: 23px;
     font-weight: 700;
     margin-bottom: 1.5rem;
   }
-  @media (min-width: 640px) {
-    .footer .content .title{
-        font-size: 28px;
-    }
-  }
+
   @media (min-width: 1280px) {
     .footer .content .title{
-        font-size: 35px;
+        font-size: 25px;
     }
   }
   
@@ -71,24 +67,12 @@
   .footer .box-links{
     padding-left: 0.75rem;
     padding-right: 0.75rem;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color:#FFFFFF;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-  }
-  
-  @media (min-width: 640px) {
-    .footer .box-links{
-        font-size: 20px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .footer .box-links{
-        font-size: 24px;
-    }
+    gap: 1rem;
   }
   
   .footer .data{
@@ -97,7 +81,7 @@
   
   .footer .data .line{
     width: 1px;
-    height: 340px;
+    height: 248px;
     margin-left: auto;
     margin-right: auto;
     background-color: #FFFFFF;
@@ -133,20 +117,14 @@
   
   .footer .data-title{
     color: white;
-    font-size: 26px;
+    font-size: 23px;
     font-weight: 700;
     margin-bottom: 1.5rem;
   }
   
-  @media (min-width: 640px) {
-    .footer .data-title{
-        font-size: 28px;
-    }
-  }
-  
   @media (min-width: 1280px) {
     .footer .data-title{
-        font-size: 35px;
+        font-size: 25px;
     }
   }
   
@@ -169,37 +147,21 @@
         font-size: 48px;
     }
   }
-  
-  .footer .Whatsapp{
-    color:#25d366;
+
+  .footer .data-socials li{
+    display: grid;
+    place-items: center;
+  }
+  .footer .data-socials li img{
+    width: 35px;
   }
   
-  .footer .Instagram{
-    color:#c32aa3;
+  .footer .data-socials img.youtube{
+    transform: translateY(6px);
+    width: 40px;
   }
-  
-  .footer .Youtube{
-    color: #ff0000;
-  }
-  
-  .footer .Facebook{
-    color: #1877f2;
-  }
-  
   .footer .note-text{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     color: white;
   }
-  
-  @media (min-width: 640px) {
-    .footer .note-text{
-        font-size: 22px;
-    }
-  }
-  
-  @media (min-width: 1280px) {
-    .footer .note-text{
-        font-size: 25px;
-    }
-  } 

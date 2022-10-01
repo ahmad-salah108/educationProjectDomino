@@ -9,7 +9,7 @@ import '../../../assest/css/user/home/landHome.css'
 export default function LandHomePage() {
   useEffect(()=>{
     AOS.init({
-      duration:2000
+      duration:400
     })
   },[]);
 
