@@ -30,28 +30,10 @@
     margin-bottom: 1rem;
   }
   
-  @media (min-width: 640px) {
-    .membersShip .title{
-        font-size: 30px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .membersShip .title{
-        font-size: 35px;
-    }
-  }
-  
   .membersShip .description{
     font-size: 16px;
     font-weight: 400;
     opacity: 0.8;
-  }
-  
-  @media (min-width: 1024px) {
-    .membersShip .description{
-        font-size: 18px;
-    }
   }
   
   .membersShip .image{

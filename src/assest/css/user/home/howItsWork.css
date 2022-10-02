@@ -15,6 +15,9 @@
   }
   
   @media (min-width: 768px) {
+    .works-wrapper{
+      width: 80% !important;
+    }
     .works .image{
         width: 360px;
     }
@@ -49,18 +52,6 @@
     letter-spacing: -1.5%;
   }
   
-  @media (min-width: 640px) {
-    .works .title{
-        font-size: 24px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .works .title{
-        font-size: 28px;
-    }
-  }
-  
   .works .description{
     margin-top: 0.75rem;
     color: #000000cc;
@@ -78,10 +69,4 @@
     }
   }
 
-
-  @media (min-width: 768px) {
-    .works .description{
-        font-size: 20px;
-    }
-  }
   

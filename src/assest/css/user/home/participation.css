@@ -5,16 +5,3 @@
     font-size: 28px;
     font-weight: bold;
 }
-@media (min-width:768px)
-{
-  .heading-2{
-      font-size: 36px;
-  }
-}
-@media (min-width:1024px)
-{
-  .heading-2{
-    line-height: 72px;
-    font-size: 42px;
-  }
-}

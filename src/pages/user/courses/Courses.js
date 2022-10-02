@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import coursesData from '../../../data/coursesData'
-import '../../../assest/css/user/courses/courses.css'
 import CoursesCategoryBar from "../../../components/user/courses/CoursesCategoryBar";
 import Course from "../../../components/user/courses/Course";
 

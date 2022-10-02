@@ -8,20 +8,6 @@
     font-size: 30px; 
   }
   
-  @media (min-width:1024px)
-  {
-    .services .title{
-          font-size:45px;
-      }
-  }
-  
-  @media (min-width:768px)
-  {
-    .services .title{
-          font-size:40px;
-      }
-  }
-  
   .services .content{
     display: grid;
     margin-top: 40px;
@@ -76,29 +62,8 @@
     color: #000000;
   }
   
-  @media (min-width:640px)
-  {
-    .services .box-title{
-        font-size: 24px;
-      }
-  }
-  
-  @media (min-width:1024px)
-  {
-    .services .box-title{
-        font-size: 28px;
-      }
-  }
-  
   .services .box-descirption{
     font-size: 18px;
     color: #000000cc;
     line-height: 30px;
-  }
-  
-  @media (min-width:768px)
-  {
-    .services .box-descirption{
-        font-size: 20px;
-      }
-  }  
+  } 

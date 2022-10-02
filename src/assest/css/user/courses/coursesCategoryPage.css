@@ -1,84 +1,85 @@
-.courses-category{
+.courses-category, .courses{
     margin-top: 100px;
   }
   
-  .courses-category .courses-wrapper{
+  .courses-category .courses-wrapper, .courses .courses-wrapper{
     display: flex;
     column-gap: 7rem;
     row-gap: 1.75rem;
     flex-direction: column;
     align-items: flex-start;
   }
-  
-  @media (min-width: 768px) {
-    .courses-category .courses-wrapper{
-        flex-direction: row;
-    }
+  .courses .courses-wrapper{
+    column-gap: 4rem;
+    align-items: start;
   }
   
   @media (min-width: 768px) {
-    .courses-category .category-wrap{
-        width: 35%;
+    .courses-category .courses-wrapper, .courses .courses-wrapper{
+        flex-direction: row;
+    }
+    .courses-category .category-wrap, .courses .category-wrap{
+      width: 25%;
     }
   }
   
   @media (min-width: 1024px) {
-    .courses-category .category-wrap{
-        width: 25%;
+    .courses-category .category-wrap, .courses .category-wrap{
+        width: 20%;
     }
   }
   
-  .courses-category .courses-content{
+  .courses-category .courses-content, .courses .courses-content{
     width: 100%;
   }
   
   @media (min-width: 768px) {
-    .courses-category .courses-content{
-        width: 60%;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .courses-category .courses-content{
+    .courses-category .courses-content, .courses .courses-content{
         width: 70%;
     }
   }
   
+  @media (min-width: 1024px) {
+    .courses-category .courses-content, .courses .courses-content{
+        width: 75%;
+    }
+  }
+  
   @media (min-width: 1280px) {
-    .courses-category .courses-content{
+    .courses-category .courses-content, .courses .courses-content{
         width: 78%;
     }
   }
   
-  .courses-category .title{
+  .courses-category .title, .courses .courses-title{
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 1.5rem;
   }
   
   @media (min-width: 768px) {
-    .courses-category .title{
+    .courses-category .title, .courses .titlcourses-titlee{
         margin-bottom: 3rem;
     }
   }
   
   @media (min-width: 1024px) {
-    .courses-category .title{
+    .courses-category .title, .courses .courses-title{
         font-size: 32px;
     }
   }
   
   @media (min-width: 768px) {
-    .courses-category .title{
+    .courses-category .title, .courses .courses-title{
         font-size: 28px;
     }
   }
   
-  .courses-category .box{
+  .courses-category .box, .courses .box{
     margin-bottom: 5rem
   }
   
-  .courses-category .box-title{
+  .courses-category .box-title, .courses .box-title{
     padding-left: 2rem;
     padding-right: 2rem;
     font-size: 26px;
@@ -87,47 +88,44 @@
   }
   
   @media (min-width: 1024px) {
-    .courses-category .box-title{
+    .courses-category .box-title, .courses .box-title{
         font-size: 30px;
     }
   }
   
-  .courses-category .watchAll{
+  .courses-category .watchAll, .courses .watchAll{
     font-size: 18px;
-    color:#18A0FB;
-    text-align: left;
+    text-align: center;
     margin-bottom: 0.75rem;
     display: block;
-    width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    width: fit-content;
+    margin-right: auto;
+    background-color: #18A0FB;
+    color: #fff;
+    margin-left: 2rem;
+    padding: 10px 15px;
+    border-radius: 10px;
   }
   
-  .courses-category .boxes-wrapper{
+  .courses-category .boxes-wrapper, .courses .boxes-wrapper{
     display: grid;
     gap: 2.5rem;
   }
   
   @media (min-width: 640px) {
-    .courses-category .boxes-wrapper{
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  
-  @media (min-width: 640px) {
-    .courses-category .boxes-wrapper{
+    .courses-category .boxes-wrapper, .courses .boxes-wrapper{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   
   @media (min-width: 1024px) {
-    .courses-category .boxes-wrapper{
+    .courses-category .boxes-wrapper, .courses .boxes-wrapper{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   
   @media (min-width: 1280px) {
-    .courses-category .boxes-wrapper{
+    .courses-category .boxes-wrapper, .courses .boxes-wrapper{
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
