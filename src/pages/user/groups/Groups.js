@@ -4,6 +4,8 @@ import Group from "../../../components/user/groups/Group";
 import GroupsCategoryBar from "../../../components/user/groups/GroupCategoryBar";
 import gropusData from '../../../data/groupsData'
 import '../../../assest/css/user/groups/groupsPage.css'
+import {BsFillHeartFill} from 'react-icons/bs'
+import {motion} from 'framer-motion'
 
 export default function Groups()
 {
@@ -41,7 +43,17 @@ export default function Groups()
                                         {
                                             box.groups.map((group,index)=>
                                             {
-                                                return <Link to={`/groups/${box.type}/${group.id}`} key={index+'z1'} > <Group group={group}/></Link>
+                                                return (
+                                                    <div className="the-course-card">
+                                                        <Link to={`/groups/${box.type}/${group.id}`} key={index+'z1'} > <Group group={group}/></Link>
+                                                        <motion.div className='icons' initial={{opacity:0, y:"-10px"}} animate={{opacity:1, y:"0px",transition:{duration:0.4}}}>
+                                                            <label>
+                                                                <input type='checkbox' name='favorite' style={{display: 'none'}}/>
+                                                                <BsFillHeartFill className='heart'/>
+                                                            </label>
+                                                        </motion.div>
+                                                    </div>
+                                                );
                                             })
                                         }
                                     </div>

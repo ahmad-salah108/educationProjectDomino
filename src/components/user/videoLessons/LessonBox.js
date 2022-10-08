@@ -30,9 +30,6 @@ export default function LessonBox({lesson, type}) {
                         <Link to={`${type?`/videoLessons/watch/${type}/${lesson.id}`:""}`} className="lesson-link"
                         >مشاهدة</Link>
                     </div>
-                    <div className="image">
-                        <img src={vector3} alt="load"/>
-                    </div>
                 </div>
             </div>
         </motion.div>

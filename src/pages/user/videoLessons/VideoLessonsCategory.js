@@ -5,6 +5,8 @@ import videoLessonsData from '../../../data/videoLessonsData';
 import LessonsBar from '../../../components/user/videoLessons/LessonBar';
 import LessonBox from '../../../components/user/videoLessons/LessonBox';
 import '../../../assest/css/user/videoLessons/videoLessonsCategoryPage.css'
+import {BsFillHeartFill} from 'react-icons/bs'
+import {motion} from 'framer-motion'
 
 export default function VideoLessonsCategory() {
     // get gategory from url params
@@ -48,9 +50,19 @@ export default function VideoLessonsCategory() {
                                 {
                                     box.groups.map((group,index)=>
                                     {
-                                        return <Link to={`/videoLessons/${box.type}/${group.id}`} key={index+'z1'} >
-                                            <LessonBox lesson={group} type={box.type}/>
-                                        </Link>
+                                        return (
+                                            <div className="the-course-card">
+                                                <Link to={`/videoLessons/${box.type}/${group.id}`} key={index+'z1'} > 
+                                                    <LessonBox lesson={group} type={box.type}/>
+                                                </Link>
+                                                <motion.div className='icons' initial={{opacity:0, y:"-10px"}} animate={{opacity:1, y:"0px",transition:{duration:0.4}}}>
+                                                    <label>
+                                                        <input type='checkbox' name='favorite' style={{display: 'none'}}/>
+                                                        <BsFillHeartFill className='heart'/>
+                                                    </label>
+                                                </motion.div>
+                                            </div>
+                                        );
                                     })
                                 }
                             </div>

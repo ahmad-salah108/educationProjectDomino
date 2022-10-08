@@ -1,0 +1,34 @@
+.the-course-card{
+  width: fit-content;
+  position: relative;
+}
+.the-course-card .icons{
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+  position: absolute;
+  bottom: 28px;
+  left: 22px;
+}
+.the-course-card .course-link{
+  width: fit-content;
+}
+.the-course-card .icons input[name="favorite"]:checked + .heart{
+  color: #e2264d;
+}
+.the-course-card .icons label{
+  cursor: pointer;
+}
+.the-course-card .icons .heart{
+  width: 29px;
+  height: 29px;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.the-course-card .icons .icon-share{
+  color: black;
+  font-size: 26px;
+}

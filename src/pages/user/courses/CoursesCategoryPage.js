@@ -5,6 +5,8 @@ import coursesData from '../../../data/coursesData';
 import '../../../assest/css/user/courses/coursesCategoryPage.css'
 import EmptyCategory from '../../../components/user/util/EmptyCategory';
 import CoursesCategoryBar from '../../../components/user/courses/CoursesCategoryBar';
+import {BsCoin,BsShare, BsFillHeartFill} from 'react-icons/bs'
+import {motion} from 'framer-motion'
 
 export default function CoursesCategoryPage() {
     const {courseType} = useParams();
@@ -46,8 +48,20 @@ export default function CoursesCategoryPage() {
                                 {
                                     box.groups.map((course,index)=>
                                     {
-                                        return <Link to={`/courses/${box.type}/${course.id}`} key={index+'z1'} > 
-                                        <Course course={course}/></Link>
+                                        return (
+                                            <div className='the-course-card'>
+                                                <Link to={`/courses/${box.type}/${course.id}`} key={index+'z1'} > 
+                                                    <Course course={course}/>
+                                                </Link>
+                                                <motion.div className='icons' initial={{opacity:0, y:"-10px"}} animate={{opacity:1, y:"0px",transition:{duration:0.4}}}>
+                                                    <label>
+                                                        <input type='checkbox' name='favorite' style={{display: 'none'}}/>
+                                                        <BsFillHeartFill className='heart'/>
+                                                    </label>
+                                                    <button><BsShare className='icon-share'/></button>
+                                                </motion.div>
+                                            </div>
+                                        );
                                     })
                                 }
                             </div>

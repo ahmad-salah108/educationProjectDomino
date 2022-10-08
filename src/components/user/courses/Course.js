@@ -1,8 +1,9 @@
 import '../../../assest/css/user/courses/course.css'
-import {BsCoin,BsShare} from 'react-icons/bs'
+import {BsCoin,BsShare, BsFillHeartFill} from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import vector3 from '../../../images/icons/Vector (5).png'
 import {motion} from 'framer-motion'
+import { useRef } from 'react'
 export default function Course({course})
 {
     return(
@@ -20,12 +21,6 @@ export default function Course({course})
                 <h3 className='course-teacher'>الأستاذ/ {course.teacher}</h3>
                 <div className='course-footer'>
                     <Link to={'#'} className='link'>اشترك</Link>
-                    <div className='icons'>
-                        <div className='heart'>
-                            <img src={vector3} alt="load"/>
-                        </div>
-                        <BsShare className='icon-share'/>
-                    </div>
                 </div>
             </div>
         </motion.div>

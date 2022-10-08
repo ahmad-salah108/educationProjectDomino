@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import coursesData from '../../../data/coursesData'
 import CoursesCategoryBar from "../../../components/user/courses/CoursesCategoryBar";
 import Course from "../../../components/user/courses/Course";
+import {BsCoin,BsShare, BsFillHeartFill} from 'react-icons/bs'
+import './../../../assest/css/user/courses/courses.css'
+import {motion} from 'framer-motion'
 
 export default function Courses()
 {
@@ -39,9 +42,20 @@ export default function Courses()
                                         {
                                             box.groups.map((course,index)=>
                                             {
-                                                return <Link to={`/courses/${box.type}/${course.id}`} key={index+'z1'} > 
-                                                    <Course course={course}/>
-                                                </Link>
+                                                return (
+                                                    <div className="the-course-card">
+                                                        <Link to={`/courses/${box.type}/${course.id}`} key={index+'z1'} className="course-link" > 
+                                                            <Course course={course}/>
+                                                        </Link>
+                                                        <motion.div className='icons' initial={{opacity:0, y:"-10px"}} animate={{opacity:1, y:"0px",transition:{duration:0.4}}}>
+                                                            <label>
+                                                                <input type='checkbox' name='favorite' style={{display: 'none'}}/>
+                                                                <BsFillHeartFill className='heart'/>
+                                                            </label>
+                                                            <button><BsShare className='icon-share'/></button>
+                                                        </motion.div>
+                                                    </div>
+                                                );
                                             })
                                         }
                                     </div>

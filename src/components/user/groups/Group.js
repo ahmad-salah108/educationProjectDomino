@@ -30,9 +30,6 @@ export default function Group({group})
                             الأستاذ <span>{group.teacher}</span>
                         </span>
                     </div>
-                    <div className="image">
-                        <img src={vector3} alt="load"/>
-                    </div>
                 </div>
             </div>
         </motion.div>

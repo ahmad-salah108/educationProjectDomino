@@ -60,11 +60,16 @@
     color: white;
 }
 
-.course-box  .heart{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #F40A0A;
+input[name="favorite"]:checked + .heart{
+    color: #e2264d;
+}
+.favorite-label{
+    cursor: pointer;
+}
+.heart{
+    width: 29px;
+    height: 29px;
+    color: gray;
     display: flex;
     justify-content: center;
     align-items: center;
