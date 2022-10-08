@@ -3,6 +3,7 @@ import {GoCalendar} from 'react-icons/go'
 import {useParams} from 'react-router-dom'
 import groupsData from '../../../data/groupsData'
 import vector3 from '../../../images/icons/Vector (5).png'
+import {BsFillHeartFill} from 'react-icons/bs'
 import {FaUser} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import '../../../assest/css/user/groups/singleGroupPage.css'
@@ -76,10 +77,11 @@ export default function SingleGropup()
                             </span>
                         </div>
                         <div className='join-event'>
-                            <Link to="#" className='btn'>انضم الان</Link> 
-                            <div className="loveIcon ">
-                                <img src={vector3} alt="load"/>
-                            </div>
+                            <Link to="#" className='btn'>انضم الان</Link>
+                                <label className='group-label'>
+                                    <input type='checkbox' name='favorite' style={{display: 'none'}}/>
+                                    <BsFillHeartFill className='heart'/>
+                                </label>
                         </div>
                     </div>
                 </div>

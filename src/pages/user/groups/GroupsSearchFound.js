@@ -1,6 +1,8 @@
 import {useEffect} from 'react'
 import Group from '../../../components/user/groups/Group';
 import GroupsCategoryBar from '../../../components/user/groups/GroupCategoryBar';
+import {BsFillHeartFill} from 'react-icons/bs'
+import {motion} from 'framer-motion'
 import '../../../assest/css/user/groups/groupsSearchFound.css'
 import img1 from '../../../images/group1.webp'
 
@@ -64,7 +66,17 @@ return (
                     {
                         data.map((group,index)=>
                         {
-                            return <Group group={group}  key={index+'z1'}/>
+                            return (
+                            <div className="the-course-card">
+                                <Group group={group}  key={index+'z1'}/>
+                                <motion.div className='icons' initial={{opacity:0, y:"-10px"}} animate={{opacity:1, y:"0px",transition:{duration:0.4}}}>
+                                    <label>
+                                        <input type='checkbox' name='favorite' style={{display: 'none'}}/>
+                                        <BsFillHeartFill className='heart'/>
+                                    </label>
+                                </motion.div>
+                            </div>
+                            );
                         })
                     }
                 </div>

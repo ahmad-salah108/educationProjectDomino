@@ -203,4 +203,12 @@
     justify-content: center;
     align-items: center;
   }
+  .singleGroup .join-event .heart{
+    width: 35px;
+    height: 35px;
+  }
+  .singleGroup .join-event .group-label{
+    display: grid;
+    place-items: center;
+  }
   

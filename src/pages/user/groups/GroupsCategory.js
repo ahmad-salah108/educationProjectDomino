@@ -3,6 +3,8 @@ import { useParams , Link} from 'react-router-dom'
 import Group from '../../../components/user/groups/Group';
 import GroupsCategoryBar from '../../../components/user/groups/GroupCategoryBar';
 import groupsData from '../../../data/groupsData';
+import {BsFillHeartFill} from 'react-icons/bs'
+import {motion} from 'framer-motion'
 import '../../../assest/css/user/groups/categoryGroupsPage.css'
 import EmptyCategory from '../../../components/user/util/EmptyCategory';
 
@@ -49,9 +51,17 @@ return (
                                 {
                                     box.groups.map((group,index)=>
                                     {
-                                        return <Link to={`/groups/${box.type}/${group.id}`} key={index+'z1'} >
-                                            <Group group={group}/>
-                                        </Link>
+                                        return (
+                                            <div className="the-course-card">
+                                                <Link to={`/groups/${box.type}/${group.id}`} key={index+'z1'} > <Group group={group}/></Link>
+                                                <motion.div className='icons' initial={{opacity:0, y:"-10px"}} animate={{opacity:1, y:"0px",transition:{duration:0.4}}}>
+                                                    <label>
+                                                        <input type='checkbox' name='favorite' style={{display: 'none'}}/>
+                                                        <BsFillHeartFill className='heart'/>
+                                                    </label>
+                                                </motion.div>
+                                            </div>
+                                        );
                                     })
                                 }
                             </div>
