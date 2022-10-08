@@ -17,7 +17,7 @@ export default function TeacherLogin() {
     <div className='teacher-login container'>
         <div className='register-top'>
             <h2 className='heading'>انضم الينا </h2>
-            <h3 className='hasaccount'>انضم الينا هل لديك حساب على اكادميتنا ؟ <Link to={"/login/teacher"} className="link">تسجيل الدخول</Link> </h3>
+            <h3 className='hasaccount'>ليس لديك حساب ؟ <Link to={"/register/teacher"} className="link">إنشاء حساب</Link> </h3>
             <div className='register-as'>
                 <Link to={"/login/student"} className="notActive">تسجيل كطالب </Link>
                 <Link to={"/login/teacher"} className="active">تسجيل كمعلم </Link>

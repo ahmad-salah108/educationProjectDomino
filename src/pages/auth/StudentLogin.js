@@ -17,7 +17,7 @@ export default function StudentLogin() {
     <div className='student-login container'>
         <div className='register-top'>
             <h2 className='heading'>انضم الينا </h2>
-            <h3 className='hasaccount'>انضم الينا هل لديك حساب على اكادميتنا ؟ <Link to={"/login/teacher"} className="link">تسجيل الدخول</Link> </h3>
+            <h3 className='hasaccount'>ليس لديك حساب ؟ <Link to={"/register/student"} className="link">إنشاء حساب</Link> </h3>
             <div className='register-as'>
                 <Link to={"/login/student"} className="active">تسجيل كطالب </Link>
                 <Link to={"/login/teacher"} className="notActive">تسجيل كمعلم </Link>
