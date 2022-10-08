@@ -17,9 +17,6 @@ export default function Forums({forum,goldurl})
                 </span>
                 <div className='controls'>
                     <Link to={`${goldurl?goldurl:""}`} className='follow-us'>انضم الان</Link>
-                    <div className="love-icon">
-                        <img src={vector3} alt="load"/>
-                    </div>
                 </div>
             </div>
         </motion.div>

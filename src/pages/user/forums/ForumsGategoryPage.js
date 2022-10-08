@@ -3,6 +3,8 @@ import { useParams , Link} from 'react-router-dom'
 import Forum from '../../../components/user/forums/Forum';
 import ForumsCategory from '../../../components/user/forums/ForumsCategoryBar';
 import forumsDate from '../../../data/forumsData';
+import {BsFillHeartFill} from 'react-icons/bs'
+import {motion} from 'framer-motion'
 import '../../../assest/css/user/forums/forumsGategoryPgae.css'
 import EmptyCategory from '../../../components/user/util/EmptyCategory';
 
@@ -46,8 +48,19 @@ export default function ForumsCategoryPage() {
                                 {
                                     box.groups.map((forum,index)=>
                                     {
-                                        return <Link to={`/forums/${box.type}/${forum.id}`} key={index+'z1'} > 
-                                        <Forum forum={forum}/></Link>
+                                        return (
+                                            <div className="the-course-card">
+                                                <Link to={`/forums/${box.type}/${forum.id}`} key={index+'z1'} className="forum-link"> 
+                                                    <Forum forum={forum}/>
+                                                </Link>
+                                                <motion.div className="icons" initial={{opacity:0, y:"-10px"}} animate={{opacity:1, y:"0px",transition:{duration:0.4}}}>
+                                                    <label>
+                                                        <input type='checkbox' name='favorite' style={{display: 'none'}}/>
+                                                        <BsFillHeartFill className='heart'/>
+                                                    </label>
+                                                </motion.div>
+                                            </div>
+                                        );
                                     })
                                 }
                             </div>

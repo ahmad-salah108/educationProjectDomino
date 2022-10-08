@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom"
 import forumData from '../../../data/forumsData'
 import ForumsCategory from '../../../components/user/forums/ForumsCategoryBar'
 import Forum from '../../../components/user/forums/Forum'
+import {BsFillHeartFill} from 'react-icons/bs'
+import {motion} from 'framer-motion'
 import '../../../assest/css/user/forums/singleForum.css'
 export default function SingleForum()
 {
@@ -47,7 +49,15 @@ export default function SingleForum()
                         </div>
                     </div>
                     <div className="lg:order-2 order-1 w-[80%] sm:w-[70%] md:w-fit mb-16 mx-auto md:mr-0 wrapper-forum">
-                        <Forum forum={forum}/>
+                        <div className="the-course-card">
+                            <Forum forum={forum}/>
+                            <motion.div className="icons" initial={{opacity:0, y:"-10px"}} animate={{opacity:1, y:"0px",transition:{duration:0.4}}}>
+                                <label>
+                                    <input type='checkbox' name='favorite' style={{display: 'none'}}/>
+                                    <BsFillHeartFill className='heart'/>
+                                </label>
+                            </motion.div>
+                        </div>
                     </div>
                 </div>
             </div>

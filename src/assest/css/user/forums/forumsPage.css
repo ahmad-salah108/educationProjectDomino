@@ -105,6 +105,7 @@
   .forums .boxes-wrapper{
     display: grid;
     gap: 2.5rem;
+    place-items: center;
   }
   
   @media (min-width: 640px) {
@@ -129,4 +130,10 @@
     .forums .boxes-wrapper{
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+  }
+  .forums .groups-wrapper .groups-content .the-course-card .icons{
+    bottom: 22px;
+  }
+  .forums .groups-wrapper .groups-content .the-course-card .forum-link{
+    width: fit-content;
   }
