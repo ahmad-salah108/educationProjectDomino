@@ -1,4 +1,4 @@
-import {Route, Routes} from 'react-router-dom'
+import {Route, Routes, useLocation} from 'react-router-dom'
 import UserpagesOutlet from './pages/user/UserpagesOutlet';
 import Home from './pages/user/home/Home';
 import Groups from './pages/user/groups/Groups';
@@ -83,10 +83,12 @@ import SchoolSchedule from './pages/teacher/SchoolSchedule';
 
 
 function App() {
+  const location = useLocation();
+
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={<UserpagesOutlet/>}>
+        <Route path='/' element={<UserpagesOutlet location={location}/>}>
           <Route index element={<Home/>}/>
           <Route path='groups' element={<Groups/>}/>
           <Route path='groups/search/notFound' element={<GroupsSearchNotFound/>}/>
