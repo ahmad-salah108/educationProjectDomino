@@ -10,7 +10,7 @@ export default function LessonUrl({lesson}) {
         <Link to={`#`}
         className="text-[#3C58A0] text-[24px] md:text-[28px] font-[500] boxlink-link"
         >
-            jssssssssssssssssssssssssssssssssssssennnnnnnnnnjnj
+            Here is the URL link
         </Link>
     </div>
   )

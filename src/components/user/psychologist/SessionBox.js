@@ -1,9 +1,9 @@
 import React from 'react'
 import {HiOutlineCurrencyDollar} from 'react-icons/hi'
 import {GiClockwork} from 'react-icons/gi'
-import vector3 from '../../../images/icons/Vector (5).png'
 import { Link } from 'react-router-dom'
 import '../../../assest/css/user/psychologist/sessionBox.css'
+import {BsFillHeartFill} from 'react-icons/bs'
 
 export default function SessionBox({session}) {
 return (
@@ -25,9 +25,10 @@ return (
         <div className='controls-session'>
             <Link to={"#"} className="btn-request-session">
             طلب جلسة</Link>
-            <div className="love-session">
-                <img src={vector3} alt="load"/>
-            </div>
+            <label>
+                <input type='checkbox' name='favorite' style={{display: 'none'}}/>
+                <BsFillHeartFill className='favorite'/>
+            </label>
         </div>
     </div>
   )

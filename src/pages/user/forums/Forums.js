@@ -38,11 +38,9 @@ export default function Forums()
                                     className="watchAll">مشاهدة الجميع</Link>
                                     <div className="boxes-wrapper">
                                         {
-                                            box.groups.map((forum,index)=>
+                                            box.groups.map((forum)=>
                                             {
-                                                return <Link to={`/forums/${box.type}/${forum.id}`} key={index+'z1'} > 
-                                                    <Forum forum={forum}/>
-                                                </Link>
+                                                return <Forum key={forum.id} forum={forum} type={box.type}/>;
                                             })
                                         }
                                     </div>

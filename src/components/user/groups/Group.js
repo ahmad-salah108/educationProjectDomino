@@ -10,9 +10,9 @@ export default function Group({group, type})
     return(
             <motion.div className="group" 
             initial={{opacity:0, y:"-10px"}} animate={{opacity:1, y:"0px",transition:{duration:0.4}}}>
-            <Link to={`/groups/${type}/${group.id}`} ><img src={group.img} alt='load..' className="group-image"/></Link>
+            <Link to={type ? `/groups/${type}/${group.id}` : '#'} ><img src={group.img} alt='load..' className="group-image"/></Link>
             <div className="group-wrapper">
-                <Link to={`/groups/${type}/${group.id}`} >
+                <Link to={type ? `/groups/${type}/${group.id}` : '#'} >
                     <div className="group-content">
                         <div className="group-text">
                             <h2 className="group-title">{group.title}</h2>
@@ -35,7 +35,7 @@ export default function Group({group, type})
                     </div>
                     <label>
                         <input type='checkbox' name='favorite' style={{display: 'none'}}/>
-                        <BsFillHeartFill className='heart'/>
+                        <BsFillHeartFill className='favorite'/>
                     </label>
                 </div>
             </div>

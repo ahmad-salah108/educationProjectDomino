@@ -1,7 +1,6 @@
 import '../../../assest/css/user/courses/CourseBox.css'
 import {Link} from 'react-router-dom'
-import {BsShare} from 'react-icons/bs'
-import vector3 from '../../../images/icons/Vector (5).png'
+import {BsShare, BsFillHeartFill} from 'react-icons/bs'
 export default function CourseBox({course})
 {
     return(
@@ -23,7 +22,10 @@ export default function CourseBox({course})
             </div>
             <div className='course-footer'>
                 <Link to={'#'} className='link'>اشترك</Link>
-                <div className='heart'><img src={vector3} alt="load"/></div>
+                <label>
+                    <input type='checkbox' name='favorite' style={{display: 'none'}}/>
+                    <BsFillHeartFill className='favorite'/>
+                </label>
                 <BsShare className='icon-share'/>
             </div>
         </div>

@@ -61,9 +61,9 @@ export default function VideoLessonsSearchFound() {
             <h4 className='search-title'>نتائج البحث</h4>
             <div className="boxes-wrapper">
                 {
-                    data.map((lesson,index)=>
+                    data.map((group)=>
                     {
-                        return <LessonBox lesson={lesson}  key={index+'z1'}/>
+                        return <LessonBox key={group.id} lesson={group}/>;
                     })
                 }
             </div>

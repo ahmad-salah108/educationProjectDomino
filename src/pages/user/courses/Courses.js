@@ -37,11 +37,9 @@ export default function Courses()
                                     className="watchAll">مشاهدة الجميع</Link>
                                     <div className="boxes-wrapper">
                                         {
-                                            box.groups.map((course,index)=>
+                                            box.groups.map((course)=>
                                             {
-                                                return <Link to={`/courses/${box.type}/${course.id}`} key={index+'z1'} > 
-                                                    <Course course={course}/>
-                                                </Link>
+                                                return <Course key={course.id} course={course} type={box.type}/>
                                             })
                                         }
                                     </div>

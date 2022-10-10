@@ -40,8 +40,7 @@ export default function VideoLessons()
                                         {
                                             box.groups.map((group,index)=>
                                             {
-                                                return <Link to={`/videoLessons/${box.type}/${group.id}`} key={index+'z1'} > 
-                                                <LessonBox lesson={group} type={box.type}/></Link>
+                                                return <LessonBox key={group.id} lesson={group} type={box.type}/>;
                                             })
                                         }
                                     </div>

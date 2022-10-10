@@ -79,7 +79,7 @@ export default function SingleGropup()
                             <Link to="#" className='btn'>انضم الان</Link> 
                             <label>
                                 <input type='checkbox' name='favorite' style={{display: 'none'}}/>
-                                <BsFillHeartFill className='heart'/>
+                                <BsFillHeartFill className='favorite'/>
                             </label>
                         </div>
                     </div>

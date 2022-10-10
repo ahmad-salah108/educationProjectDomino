@@ -65,11 +65,11 @@ button{
       max-width: 100%;
   }
 }
-label:has(.heart){
+label:has(.favorite){
   display: grid;
   place-items: center;
 }
-.heart{
+.favorite{
   align-items: center;
   color: gray;
   display: flex;
@@ -79,6 +79,6 @@ label:has(.heart){
   margin-left: 10px;
   cursor: pointer;
 }
-input[name="favorite"]:checked + .heart{
+input[name="favorite"]:checked + .favorite{
   color: #e2264d;
 }
